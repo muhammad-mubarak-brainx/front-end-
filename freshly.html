@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freshly</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="./jquery-steps-master/demo/css/main.css">
+    <link rel="stylesheet" href="./jquery-steps-master/demo/css/jquery.steps.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-steps/1.1.0/jquery.steps.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <link rel="stylesheet" href="freshly.css">
+</head>
+
+<body>
+    <div id="basic-steps">
+        <h3>Plan</h3>
+        <section id="sec-1">
+            <div class="container-fluid">
+                <div class="row d-flex m-0 p-4 justify-content-center">
+                    <h1>CHOOSE A PLAN</h1>
+                </div>
+                <div class="d-flex m-0 p-2 justify-content-center">
+                    Each Freshly meal is one serving, for one person, at one sitting.
+                </div>
+                <div class="row m-0 d-flex justify-content-center">
+                    <div class="col-md-2 px-0 px-sm-2 images-size ">
+                        <img class="position-images "
+                            src="https://res.cloudinary.com/freshly/image/upload/q_auto:good,dpr_auto,f_auto/v1494958610/meal_sleeve_i19vxf"
+                            alt="freshly image">
+                    </div>
+                    <div class="col-md-2 px-0 px-sm-2 images-size">
+                        <img class="position-images"
+                            src="https://res.cloudinary.com/freshly/image/upload/q_auto:good,dpr_auto,f_auto/v1494958610/teriyaki_unsleeved_in_container_l6gcq9"
+                            alt="">
+                    </div>
+                    <div class="col-md-2 px-0 px-sm-2 images-size">
+                        <img class="position-images"
+                            src="https://res.cloudinary.com/freshly/image/upload/q_auto:good,dpr_auto,f_auto/v1494958610/teriyaki_plated_urly5f"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid flex-display">
+                <div class="row m-0 d-flex w-100">
+                    <div class="col-md-3 d-flex justify-content-center">
+                        <div class="card">
+                            <picture>
+                                <source
+                                    data-srcset="https://res.cloudinary.com/freshly/image/upload/q_auto:good,dpr_auto,f_auto,ar_1:1,c_fill/c_scale/v1494958610/updated-4-plan_uu0ijm.jpg"
+                                    media="(max-width = 768px)"
+                                    srcset="https://res.cloudinary.com/freshly/image/upload/q_auto:good,dpr_auto,f_auto,ar_1:1,c_fill/c_scale/v1494958610/updated-4-plan_uu0ijm.jpg">
+                                <img data-src="https://res.cloudinary.com/freshly/image/upload/q_auto:good,dpr_auto,f_auto,/v1494958610/updated-4-plan_uu0ijm.jpg"
+                                    class="card-img-top lazyloaded" alt=""
+                                    src="https://res.cloudinary.com/freshly/image/upload/q_auto:good,dpr_auto,f_auto,/v1494958610/updated-4-plan_uu0ijm.jpg">
+                            </picture>
+                            <div class="card-body">
+                                <div>
+                                    <h2 class="card-title flex-display">
+                                        <span class="display-4 mb-0 mb-lg-3">4</span>
+                                    </h2>
+                                    <span class="h4 text-uppercase flex-display  ">meals&nbsp;/&nbsp;week</span>
+                                    <p class="card-text mt-2 mb-0 mb-lg-3">
+                                        <span class="flex-display font-weight-500">$11.49&nbsp;/&nbsp;meal</span>
+                                    </p>
+                                </div>
+                                <form action="#example-basic-h-1" id="meal4">
+                                    <button name="button" type="submit"
+                                        class="btn btn-primary btn-lg btn-block d-none d-lg-block"
+                                        aria-label="Select the 4 meals plan">Select this
+                                        plan
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 d-flex justify-content-center">
+                        <div class="card">
+                            <picture>
+                                <source
+                                    data-srcset="https://res.cloudinary.com/freshly/image/upload/q_auto:good,dpr_auto,f_auto,ar_1:1,c_fill/c_scale/v1494958610/updated-6-plan_ifjrbr.jpg"
+                                    media="(max-width: 768px)"
+                                    srcset="https://res.cloudinary.com/freshly/image/upload/q_auto:good,dpr_auto,f_auto,ar_1:1,c_fill/c_scale/v1494958610/updated-6-plan_ifjrbr.jpg">
+                                <img data-src="https://res.cloudinary.com/freshly/image/upload/q_auto:good,dpr_auto,f_auto,/v1494958610/updated-6-plan_ifjrbr.jpg"
+                                    class="card-img-top lazyloaded" alt=""
+                                    src="https://res.cloudinary.com/freshly/image/upload/q_auto:good,dpr_auto,f_auto,/v1494958610/updated-6-plan_ifjrbr.jpg">
+                            </picture>
+                            <div class="card-body">
+                                <div>
+                                    <h2 class="card-title flex-display">
+                                        <span class="display-4 mb-0 mb-lg-3">6</span>
+                                    </h2>
+                                    <span class="h4 text-uppercase flex-display  ">meals&nbsp;/&nbsp;week</span>
+                                    <p class="card-text mt-2 mb-0 mb-lg-3">
+                                        <span class="flex-display font-weight-500">$9.49&nbsp;/&nbsp;meal</span>
+                                    </p>
+                                </div>
+                                <button name="button" type="submit" id="meal6"
+                                    class="btn btn-primary btn-lg btn-block d-none d-lg-block"
+                                    aria-label="Select the 4 meals plan">Select this plan</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 d-flex justify-content-center">
+                        <div class="card">
+                            <picture>
+                                <source
+                                    data-srcset="https://res.cloudinary.com/freshly/image/upload/q_auto:good,dpr_auto,f_auto,ar_1:1,c_fill/c_scale/v1494958610/updated-8-plan_yuloqr.jpg"
+                                    media="(max-width: 768px)"
+                                    srcset="https://res.cloudinary.com/freshly/image/upload/q_auto:good,dpr_auto,f_auto,ar_1:1,c_fill/c_scale/v1494958610/updated-8-plan_yuloqr.jpg">
+                                <img data-src="https://res.cloudinary.com/freshly/image/upload/q_auto:good,dpr_auto,f_auto,/v1494958610/updated-8-plan_yuloqr.jpg"
+                                    class="card-img-top lazyloaded" alt=""
+                                    src="https://res.cloudinary.com/freshly/image/upload/q_auto:good,dpr_auto,f_auto,/v1494958610/updated-8-plan_yuloqr.jpg">
+                            </picture>
+                            <div class="card-body">
+                                <div>
+                                    <h2 class="card-title flex-display">
+                                        <span class="display-4 mb-0 mb-lg-3">10</span>
+                                    </h2>
+                                    <span class="h4 text-uppercase flex-display  ">meals&nbsp;/&nbsp;week</span>
+                                    <p class="card-text mt-2 mb-0 mb-lg-3">
+                                        <span class="flex-display font-weight-500">$8.99&nbsp;/&nbsp;meal</span>
+                                    </p>
+                                </div>
+                                <button name="button" type="submit" id="meal10"
+                                    class="btn btn-primary btn-lg btn-block d-none d-lg-block"
+                                    aria-label="Select the 4 meals plan">Select this plan</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 d-flex justify-content-center">
+                        <div class="card">
+                            <picture>
+                                <source
+                                    data-srcset="https://res.cloudinary.com/freshly/image/upload/q_auto:good,dpr_auto,f_auto,ar_1:1,c_fill/c_scale/v1494958610/updated-12-plan_xgj7pt.jpg"
+                                    media="(max-width: 768px)"
+                                    srcset="https://res.cloudinary.com/freshly/image/upload/q_auto:good,dpr_auto,f_auto,ar_1:1,c_fill/c_scale/v1494958610/updated-12-plan_xgj7pt.jpg">
+                                <img data-src="https://res.cloudinary.com/freshly/image/upload/q_auto:good,dpr_auto,f_auto,/v1494958610/updated-12-plan_xgj7pt.jpg"
+                                    class="card-img-top lazyloaded" alt=""
+                                    src="https://res.cloudinary.com/freshly/image/upload/q_auto:good,dpr_auto,f_auto,/v1494958610/updated-12-plan_xgj7pt.jpg">
+                            </picture>
+                            <div class="card-body">
+                                <div>
+                                    <h2 class="card-title flex-display">
+                                        <span class="display-4 mb-0 mb-lg-3">12</span>
+                                    </h2>
+                                    <span class="h4 text-uppercase flex-display  ">meals&nbsp;/&nbsp;week</span>
+                                    <p class="card-text mt-2 mb-0 mb-lg-3">
+                                        <span class="flex-display font-weight-500">$8.49&nbsp;/&nbsp;meal</span>
+                                    </p>
+                                </div>
+                                <button name="button" type="submit" id="meal12"
+                                    class="btn btn-primary btn-lg btn-block d-none d-lg-block"
+                                    aria-label="Select the 4 meals plan">Select this plan</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <h3>Day</h3>
+        <section id="sec-2">
+            <div class="container-fluid flex-display">
+                <div class="row d-flex m-0 p-4 justify-content-center">
+                    <h5>CHOOSE A DELIVERY DAY</h5>
+                </div>
+            </div>
+            <div class="container-fluid p-2">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-md-4 p-0 flex-display " id="tempDiv">
+                        <div class="template_master scrollable-date-picker mb3" id="datePickerContainer">
+                        </div>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <div class="col-md-2 sol-sm-2 d-flex justify-content-center p-4">
+                        <button type="submit" data-test="submit-date" id="next-button" class="mb-2 btn btn-primary btn-lg btn-block">Next</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <h3>Meals</h3>
+        <section id="sec-3">
+            <div class="container-fluid">
+                <div class="row m-0">
+                    <div class="col-md-10">
+                        <ul class="flex m-0 pt-2 row">
+                            <li class="mb-3 col-12 col-md-6 col-lg-4 col-xl-3 ">
+                                <div class="col card p-2 d-flex justify-content-center" data-title="STEAK PEPPERCORN">
+                                    <img src="https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80"
+                                        alt="image-001" class="w-100">
+                                    <span class="d-flex justify-content-left">
+                                        <h5 class="title">STEAK PEPPERCORN</h5>
+                                    </span>
+                                    <div class="row m-0">
+                                        <h6 class="subtitle">with Sautéed Carrots & French Green Beans</h6>
+                                    </div>
+                                    <div class="d-flex justify-content-between mt-auto ">
+                                        <div class="col-sm-2 p-1 specs  justify-content-left ">
+                                            510
+                                            <div>Cals</div>
+                                        </div>
+                                        <div class="col-sm-2 p-1 specs   justify-content-left ">
+                                            33g
+                                            <div>Carbs</div>
+                                        </div>
+                                        <div class="col-sm-2 p-1 specs justify-content-left">
+                                            29g
+                                            <div>Protein</div>
+                                        </div>
+                                        <div class="col p-1">
+                                            <button class="btn btn-primary add-button p-0" id="addButton">+Add</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="mb-3 col-12 col-md-6 col-lg-4 col-xl-3 ">
+                                <div class="col card p-2 d-flex justify-content-center"
+                                    data-title="Cauliflower shell beef bolognese">
+                                    <img src="https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_683,w_1024/v1602724105/production-meal-image-57e49562-348b-42f2-9ca6-9f40a95c8395.jpg"
+                                        alt="" class="w-100">
+                                    <span class="d-flex justify-content-left">
+                                        <h5 class="title">Cauliflower shell beef bolognese</h5>
+                                    </span>
+                                    <div class="row m-0">
+                                        <h6 class="subtitle">with Nonna’s Soffritto & Italian Cheeses</h6>
+                                    </div>
+                                    <div class="d-flex justify-content-between mt-auto ">
+                                        <div class="col-sm-2 p-1 specs  justify-content-left ">
+                                            540
+                                            <div>Cals</div>
+                                        </div>
+                                        <div class="col-sm-2 p-1 specs   justify-content-left ">
+                                            48g
+                                            <div>Carbs</div>
+                                        </div>
+                                        <div class="col-sm-2 p-1 specs justify-content-left">
+                                            30g
+                                            <div>Protein</div>
+                                        </div>
+                                        <div class="col p-1">
+                                            <button class="btn btn-primary add-button p-0" id="addButton">+Add</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="mb-3 col-12 col-md-6 col-lg-4 col-xl-3 ">
+                                <div class="col card p-2 d-flex justify-content-center"
+                                    data-title="PROTEIN-PACKED CHICKEN PARM">
+                                    <img src="https://res.cloudinary.com/freshly/image/upload/c_fill,dpr_2,f_auto,w_341/v1607770959/production-meal-image-7a62bb89-9bcb-4f1f-9f0f-d8372698d48e.jpg"
+                                        alt="image-001" class="w-100">
+                                    <span class="d-flex justify-content-left">
+                                        <h5 class="title">PROTEIN-PACKED CHICKEN PARM</h5>
+                                    </span>
+                                    <div class="row m-0">
+                                        <h6 class="subtitle">with Mozzarella & Garlicky Broccoli</h6>
+                                    </div>
+                                    <div class="d-flex justify-content-between mt-auto ">
+                                        <div class="col-sm-2 p-1 specs  justify-content-left ">
+                                            510
+                                            <div>Cals</div>
+                                        </div>
+                                        <div class="col-sm-2 p-1 specs   justify-content-left ">
+                                            33g
+                                            <div>Carbs</div>
+                                        </div>
+                                        <div class="col-sm-2 p-1 specs justify-content-left">
+                                            29g
+                                            <div>Protein</div>
+                                        </div>
+                                        <div class="col p-1">
+                                            <button class="btn btn-primary add-button p-0" id="addButton">+Add</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="mb-3 col-12 col-md-6 col-lg-4 col-xl-3 ">
+                                <div class="col card p-2 d-flex justify-content-center" data-title="HOMESTYLE CHICKEN">
+                                    <img src="https://res.cloudinary.com/freshly/image/upload/c_fill,dpr_2,f_auto,w_341/v1602723110/production-meal-image-0a78bae3-2e0c-4ab7-b420-154ed262d4d0.jpg"
+                                        alt="image-001" class="w-100">
+                                    <span class="d-flex justify-content-left">
+                                        <h5 class="title">HOMESTYLE CHICKEN</h5>
+                                    </span>
+                                    <div class="row m-0">
+                                        <h6 class="subtitle">with Masterful Mac & Cheese</h6>
+                                    </div>
+                                    <div class="d-flex justify-content-between mt-auto ">
+                                        <div class="col-sm-2 p-1 specs  justify-content-left ">
+                                            600
+                                            <div>Cals</div>
+                                        </div>
+                                        <div class="col-sm-2 p-1 specs   justify-content-left ">
+                                            45g
+                                            <div>Carbs</div>
+                                        </div>
+                                        <div class="col-sm-2 p-1 specs justify-content-left">
+                                            46g
+                                            <div>Protein</div>
+                                        </div>
+                                        <div class="col p-1">
+                                            <button class="btn btn-primary add-button p-0" id="addButton">+Add</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="flex m-0 pt-2 row">
+                            <li class="mb-3 col-12 col-md-6 col-lg-4 col-xl-3 ">
+                                <div class="col card p-2 d-flex justify-content-center" data-title="ZINGY BUFFALO CHICKEN">
+                                    <img src="https://res.cloudinary.com/freshly/image/upload/c_fill,dpr_2,f_auto,w_341/v1602721634/production-meal-image-8771fb54-2c23-4063-8007-f5024df074c2.jpg"
+                                        alt="image-001" class="w-100">
+                                    <span class="d-flex justify-content-left">
+                                        <h5 class="title">ZINGY BUFFALO CHICKEN</h5>
+                                    </span>
+                                    <div class="row m-0">
+                                        <h6 class="subtitle">with Loaded Cauliflower</h6>
+                                    </div>
+                                    <div class="d-flex justify-content-between mt-auto ">
+                                        <div class="col-sm-2 p-1 specs  justify-content-left ">
+                                            470
+                                            <div>Cals</div>
+                                        </div>
+                                        <div class="col-sm-2 p-1 specs   justify-content-left ">
+                                            15g
+                                            <div>Carbs</div>
+                                        </div>
+                                        <div class="col-sm-2 p-1 specs justify-content-left">
+                                            40g
+                                            <div>Protein</div>
+                                        </div>
+                                        <div class="col p-1">
+                                            <button class="btn btn-primary add-button p-0" id="addButton">+Add</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="mb-3 col-12 col-md-6 col-lg-4 col-xl-3 ">
+                                <div class="col card p-2 d-flex justify-content-center" data-title="STEAK PEPPERCORN">
+                                    <img src="https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80"
+                                        alt="image-001" class="w-100">
+                                    <span class="d-flex justify-content-left">
+                                        <h5>STEAK PEPPERCORN</h5>
+                                    </span>
+                                    <div class="row m-0">
+                                        <h6 class="subtitle">with Sautéed Carrots & French Green Beans</h6>
+                                    </div>
+                                    <div class="d-flex justify-content-between mt-auto ">
+                                        <div class="col-sm-2 p-1 specs  justify-content-left ">
+                                            510
+                                            <div>Cals</div>
+                                        </div>
+                                        <div class="col-sm-2 p-1 specs   justify-content-left ">
+                                            33g
+                                            <div>Carbs</div>
+                                        </div>
+                                        <div class="col-sm-2 p-1 specs justify-content-left">
+                                            29g
+                                            <div>Protein</div>
+                                        </div>
+                                        <div class="col p-1">
+                                            <button class="btn btn-primary add-button p-0" id="addButton">+Add</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="mb-3 col-12 col-md-6 col-lg-4 col-xl-3 ">
+                                <div class="col card p-2 d-flex justify-content-center" data-title="STEAK PEPPERCORN">
+                                    <img src="https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80"
+                                        alt="image-001" class="w-100">
+                                    <span class="d-flex justify-content-left">
+                                        <h5>STEAK PEPPERCORN</h5>
+                                    </span>
+                                    <div class="row m-0">
+                                        <h6 class="subtitle">with Sautéed Carrots & French Green Beans</h6>
+                                    </div>
+                                    <div class="d-flex justify-content-between mt-auto ">
+                                        <div class="col-sm-2 p-1 specs  justify-content-left ">
+                                            510
+                                            <div>Cals</div>
+                                        </div>
+                                        <div class="col-sm-2 p-1 specs   justify-content-left ">
+                                            33g
+                                            <div>Carbs</div>
+                                        </div>
+                                        <div class="col-sm-2 p-1 specs justify-content-left">
+                                            29g
+                                            <div>Protein</div>
+                                        </div>
+                                        <div class="col p-1">
+                                            <button class="btn btn-primary add-button p-0" id="addButton">+Add</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="mb-3 col-12 col-md-6 col-lg-4 col-xl-3 ">
+                                <div class="col card p-2 d-flex justify-content-center" data-title="STEAK PEPPERCORN">
+                                    <img src="https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80"
+                                        alt="image-001" class="w-100">
+                                    <span class="d-flex justify-content-left">
+                                        <h5>STEAK PEPPERCORN</h5>
+                                    </span>
+                                    <div class="row m-0">
+                                        <h6 class="subtitle">with Sautéed Carrots & French Green Beans</h6>
+                                    </div>
+                                    <div class="d-flex justify-content-between mt-auto ">
+                                        <div class="col-sm-2 p-1 specs  justify-content-left ">
+                                            510
+                                            <div>Cals</div>
+                                        </div>
+                                        <div class="col-sm-2 p-1 specs   justify-content-left ">
+                                            33g
+                                            <div>Carbs</div>
+                                        </div>
+                                        <div class="col-sm-2 p-1 specs justify-content-left">
+                                            29g
+                                            <div>Protein</div>
+                                        </div>
+                                        <div class="col p-1">
+                                            <button class="btn btn-primary add-button p-0" id="addButton">+Add</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="flex m-0 pt-2 row">
+                            <li class="mb-3 col-12 col-md-6 col-lg-4 col-xl-3 ">
+                                <div class="col card p-2 d-flex justify-content-center" data-title="STEAK PEPPERCORN">
+                                    <img src="https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80"
+                                        alt="image-001" class="w-100">
+                                    <span class="d-flex justify-content-left">
+                                        <h5 class="title">STEAK PEPPERCORN</h5>
+                                    </span>
+                                    <div class="row m-0">
+                                        <h6 class="subtitle">with Sautéed Carrots & French Green Beans</h6>
+                                    </div>
+                                    <div class="d-flex justify-content-between mt-auto ">
+                                        <div class="col-sm-2 p-1 specs  justify-content-left ">
+                                            510
+                                            <div>Cals</div>
+                                        </div>
+                                        <div class="col-sm-2 p-1 specs   justify-content-left ">
+                                            33g
+                                            <div>Carbs</div>
+                                        </div>
+                                        <div class="col-sm-2 p-1 specs justify-content-left">
+                                            29g
+                                            <div>Protein</div>
+                                        </div>
+                                        <div class="col p-1">
+                                            <button class="btn btn-primary add-button p-0" id="addButton">+Add</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="mb-3 col-12 col-md-6 col-lg-4 col-xl-3 ">
+                                <div class="col card p-2 d-flex justify-content-center meal-card"
+                                    data-title="STEAK PEPPERCORN">
+                                    <img src="https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80"
+                                        alt="image-001" class="w-100">
+                                    <span class="d-flex justify-content-left">
+                                        <h5 class="title">STEAK PEPPERCORN</h5>
+                                    </span>
+                                    <div class="row m-0">
+                                        <h6 class="subtitle">with Sautéed Carrots & French Green Beans</h6>
+                                    </div>
+                                    <div class="d-flex justify-content-between mt-auto ">
+                                        <div class="col-sm-2 p-1 specs  justify-content-left ">
+                                            510
+                                            <div>Cals</div>
+                                        </div>
+                                        <div class="col-sm-2 p-1 specs   justify-content-left ">
+                                            33g
+                                            <div>Carbs</div>
+                                        </div>
+                                        <div class="col-sm-2 p-1 specs justify-content-left">
+                                            29g
+                                            <div>Protein</div>
+                                        </div>
+                                        <div class="col p-1">
+                                            <button class="btn btn-primary add-button p-0" id="addButton">+Add</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="mb-3 col-12 col-md-6 col-lg-4 col-xl-3 ">
+                                <div class="col card p-2 d-flex justify-content-center" data-title="STEAK PEPPERCORN">
+                                    <img src="https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80"
+                                        alt="image-001" class="w-100">
+                                    <span class="d-flex justify-content-left">
+                                        <h5 class="title">STEAK PEPPERCORN</h5>
+                                    </span>
+                                    <div class="row m-0">
+                                        <h6 class="subtitle">with Sautéed Carrots & French Green Beans</h6>
+                                    </div>
+                                    <div class="d-flex justify-content-between mt-auto ">
+                                        <div class="col-sm-2 p-1 specs  justify-content-left ">
+                                            510
+                                            <div>Cals</div>
+                                        </div>
+                                        <div class="col-sm-2 p-1 specs   justify-content-left ">
+                                            33g
+                                            <div>Carbs</div>
+                                        </div>
+                                        <div class="col-sm-2 p-1 specs justify-content-left">
+                                            29g
+                                            <div>Protein</div>
+                                        </div>
+                                        <div class="col p-1">
+                                            <button class="btn btn-primary add-button p-0" id="addButton">+Add</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="mb-3 col-12 col-md-6 col-lg-4 col-xl-3 ">
+                                <div class="col card p-2 d-flex justify-content-center" data-title="STEAK PEPPERCORN">
+                                    <img src="https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80"
+                                        alt="image-001" class="w-100">
+                                    <span class="d-flex justify-content-left">
+                                        <h5 class="title">STEAK PEPPERCORN</h5>
+                                    </span>
+                                    <div class="row m-0">
+                                        <h6 class="subtitle">with Sautéed Carrots & French Green Beans</h6>
+                                    </div>
+                                    <div class="d-flex justify-content-between mt-auto ">
+                                        <div class="col-sm-2 p-1 specs  justify-content-left ">
+                                            510
+                                            <div>Cals</div>
+                                        </div>
+                                        <div class="col-sm-2 p-1 specs   justify-content-left ">
+                                            33g
+                                            <div>Carbs</div>
+                                        </div>
+                                        <div class="col-sm-2 p-1 specs justify-content-left">
+                                            29g
+                                            <div>Protein</div>
+                                        </div>
+                                        <div class="col p-1">
+                                            <button class="btn btn-primary add-button p-0" id="addButton">+Add</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <div class=" px-0 row">
+                            <div class="mb-0 d-flex flex-column justify-content-center py-3 col-7 col-md-12">
+                                <p>My delivery for:</p>
+                                <p id="delivery-date"></p>
+                            </div>
+                            <div class="py-3 py-md-0 mb-md-2 col-5 col-md-12">
+                                <button type="button" data-test="submit-cart"
+                                    class="disabled btn btn-primary btn-lg btn-block" id="submitCart">Next</button>
+                            </div>
+                            <div
+                                class="InstructionalText-module__container___1qMMn text-center align-self-center text-nowrap">
+                                <span class="d-inline-block"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                        height="20" viewBox="0 0 16 20">
+                                        <path fill="#CD2C1E"
+                                            d="M7.455 11.473c.877 0 1.869.545 1.869 1.683 0 1.137-.797 1.7-1.814 1.7-1.016 0-1.888-.698-1.858-1.724.03-1.025.926-1.659 1.803-1.659zM9.79 1l-1.172 9.473H6.225L5 1h4.79z">
+                                        </path>
+                                    </svg></span><span id="mealAlert">Add your meals</span></div>
+                        </div>
+                        <div class="row d-flex append-list" id="selectedRow" data-hide="hide">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <h3>Checkout</h3>
+        <section>
+            <div class="container-fluid">
+                <div id="checkout_container">
+                    <div class="mx-auto my-3 px-0 col-md-10">
+                        <div class="row">
+                            <div class="col-12 order-1 col-md-7 order-md-0">
+                                <div class="new_checkout_wrapper new-express-design">
+                                    <h4 class="mb-0 text-uppercase d-none d-md-block pt-2 mb-4">Checkout</h4>
+                                    <div class="collapsable-form d-block rounded-0 border-1 card">
+                                        <div class="px-2 px-md-0 collapse show">
+                                            <form>
+                                                <div class="border-sm-0 rounded-0 border-bottom-0 card">
+                                                    <div class="bg-transparent border-0 pt-0 px-0 px-md-2 card-header">
+                                                        <div class="row">
+                                                            <div class="col-md-10 offset-md-1">
+                                                                <h5 class="mb-0">Delivery Address</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="px-0 px-md-2 pb-0 card-body">
+                                                        <div class="row">
+                                                            <div class="p-0 col-md-10 offset-md-1">
+                                                                <div class="w-10 d-block d-md-flex w-100 form-group">
+                                                                    <div class="px-0 pb-3 pb-md-0 col">
+                                                                        <div class="col">
+                                                                            <label for="first_name"
+                                                                                class="small text-black-50 string optional">First
+                                                                                Name</label>
+                                                                            <div class="input-group">
+                                                                                <input type="text" name="firstName"
+                                                                                    value id="first_name"
+                                                                                    class="is-valid string optional form-control"
+                                                                                    aria-invalid="false">
+                                                                                <div class="invalid-feedback">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col">
+                                                                            <label for="last_name"
+                                                                                class="small text-black-50 string optional">Last
+                                                                                Name</label>
+                                                                            <div class="input-group"><input type="text"
+                                                                                    name="lastName" value=""
+                                                                                    id="last_name"
+                                                                                    class="is-valid string optional form-control"
+                                                                                    aria-invalid="false">
+                                                                                <div class="invalid-feedback">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="border-none rounded-0 border-bottom-0 border-top-0 card">
+                                                    <div class="px-0 px-md-2 pt-0 card-body">
+                                                        <div class="row">
+                                                            <div class="p-0 col-md-10 offset-md-1">
+                                                                <div class="d-flex w-10 form-group">
+                                                                    <div class="col"><label for="full_name"
+                                                                            class="small text-black-50 string optional">Full
+                                                                            Name for Delivery
+                                                                            Address</label>
+                                                                        <div class="input-group"><input type="text"
+                                                                                name="fullName" value=" " disabled=""
+                                                                                id="full_name"
+                                                                                class="is-valid string optional form-control"
+                                                                                aria-invalid="false">
+                                                                            <div class="invalid-feedback"></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div
+                                                                class="p-0 mb-2 opacity_height_transition_wrapper col-md-10 offset-md-1">
+                                                                <div class="form-group pl-0 form-check">
+                                                                    <div class="col"><label
+                                                                            class="inner-label d-flex form-check-label">
+                                                                            <div class="custom-checkbox custom-control">
+                                                                                <input type="checkbox"
+                                                                                    id="full_name_disabled"
+                                                                                    name="fullNameDisabled" checked=""
+                                                                                    class="custom-control-input"><label
+                                                                                    class="custom-control-label"
+                                                                                    for="full_name_disabled"></label>
+                                                                            </div> My Delivery Address
+                                                                            name is the same as my First and Last Name
+                                                                        </label></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="p-0 col-md-10 offset-md-1">
+                                                                <div class="d-flex w-10 form-group">
+                                                                    <div class="col"><label for="line1"
+                                                                            class="small text-black-50 string optional">Address
+                                                                            Line 1</label>
+                                                                        <div class="input-group"><input type="text"
+                                                                                name="line1" value="" id="line1"
+                                                                                class="is-valid string optional form-control"
+                                                                                aria-invalid="false">
+                                                                            <div class="invalid-feedback"></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="p-0 col-md-10 offset-md-1">
+                                                                <div class="d-flex w-10 form-group">
+                                                                    <div class="col"><label for="line2"
+                                                                            class="small text-black-50 string optional">Address
+                                                                            Line 2
+                                                                            (optional)</label>
+                                                                        <div class="input-group"><input type="text"
+                                                                                name="line2" value="" id="line2"
+                                                                                class="is-valid string optional form-control"
+                                                                                aria-invalid="false">
+                                                                            <div class="invalid-feedback"></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="p-0 col-md-10 offset-md-1">
+                                                                <div class="d-flex w-10 form-group">
+                                                                    <div class="col"><label for="phone"
+                                                                            class="small text-black-50 string optional">Phone</label>
+                                                                        <div class="input-group"><input type="tel"
+                                                                                name="phone" value="" id="phone"
+                                                                                class="is-valid string optional form-control"
+                                                                                aria-invalid="false">
+                                                                            <div class="invalid-feedback"></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div
+                                                                class="p-0 mb-2 opacity_height_transition_wrapper col-md-10 offset-md-1">
+                                                                <div class="form-group pl-0 form-check">
+                                                                    <div class="col"><label
+                                                                            class="inner-label d-flex form-check-label">
+                                                                            <div class="custom-checkbox custom-control">
+                                                                                <input type="checkbox"
+                                                                                    id="agreed_to_receivesms"
+                                                                                    name="agreedToReceiveSms" checked=""
+                                                                                    class="custom-control-input"><label
+                                                                                    class="custom-control-label"
+                                                                                    for="agreed_to_receivesms"></label>
+                                                                            </div> Receive SMS text
+                                                                            message updates on my orders <div
+                                                                                role="button" tabindex="0">
+                                                                                <div
+                                                                                    class="InfoButton-module__button___3yW8U d-block pl-1 pr-0 py-0">
+                                                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                                                        width="20" height="20"
+                                                                                        viewBox="0 0 20 20">
+                                                                                        <g fill-rule="nonzero"
+                                                                                            fill="none">
+                                                                                            <circle cx="10" cy="10"
+                                                                                                r="9" stroke="#717171">
+                                                                                            </circle><text
+                                                                                                fill="#717171"
+                                                                                                font-family="Roboto-Black, Roboto"
+                                                                                                font-size="11"
+                                                                                                font-weight="700">
+                                                                                                <tspan x="8.751"
+                                                                                                    y="13.5">i</tspan>
+                                                                                            </text>
+                                                                                        </g>
+                                                                                    </svg></div>
+                                                                            </div>
+                                                                        </label></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="p-0 col-md-10 offset-md-1">
+                                                                <div class="d-flex w-100 form-group">
+                                                                    <div class="col"><label for="email"
+                                                                            class="small text-black-50 string optional">Email
+                                                                            (We require your email
+                                                                            to send you receipts and order
+                                                                            updates)</label>
+                                                                        <div class="input-group"><input type="text"
+                                                                                name="email" value="" id="email"
+                                                                                class="is-valid string optional form-control"
+                                                                                aria-invalid="false">
+                                                                            <div class="invalid-feedback"></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="p-0 col-md-10 offset-md-1">
+                                                                <div class="col">
+                                                                    <div class=" m-0 mb-4 border-top pt-4 row">
+                                                                        <div
+                                                                            class="d-flex justify-content-between w-100 mb-3">
+                                                                            <span class="font-weight-500">Today's
+                                                                                Total</span><span
+                                                                                class="font-weight-500">$99.89</span>
+                                                                        </div><button type="submit"
+                                                                            class="same-height-as-paypal-button btn btn-primary btn-lg btn-block">Next</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="col-md-10 offset-md-1"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script>
+        $("#basic-steps").steps({
+            headerTag: "h3",
+            bodyTag: "section",
+            transitionEffect: "slideLeft",
+            autoFocus: true,
+        });
+    </script>
+</body>
+<script src="index.js"></script>
+
+</html>

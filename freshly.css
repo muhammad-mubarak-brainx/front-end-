@@ -1,0 +1,160 @@
+/* * {
+    border: 1px solid black;
+} */
+
+.wizard>.content>.body {
+    position: relative;
+    width: 100%;
+}
+
+.flex-display {
+    display: flex;
+    justify-content: center;
+}
+
+
+img:hover {
+    cursor: pointer;
+}
+
+.images-size {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.position-images {
+    width: 100%;
+    height: 80%;
+}
+
+.images-size::after {
+    position: absolute;
+    top: 6%;
+    right: 0;
+    display: block;
+    width: 1px;
+    height: 60%;
+    content: "";
+    background: #000;
+}
+
+.card-title {
+    margin-bottom: .75rem;
+}
+
+.display-4 {
+    font-weight: 300;
+    line-height: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-primary {
+    font-weight: 500;
+    color: white;
+    background-color: #07872b;
+    border-color: #07872b;
+}
+
+.card-body .btn:hover {
+    color: white;
+    background-color: #04571c;
+    border-color: #044a18;
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+.temp {
+    display: flex;
+    flex-direction: column;
+}
+
+.temp .btn {
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    list-style-type: none;
+}
+
+.list-item {
+    cursor: pointer;
+}
+
+.list-group-item:active {
+    z-index: 2;
+    border-right: 0;
+    border-left: 0;
+    border-radius: 0;
+    color: blue;
+    
+}
+
+.subtitle {
+    font-weight: 400;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: .875rem;
+    line-height: 1rem;
+    letter-spacing: normal;
+    color: #666;
+    font-style: italic;
+}
+
+.specs {
+    font-weight: 400;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: .75rem;
+    line-height: .875rem;
+    letter-spacing: normal;
+    color: #757575;
+}
+
+.add-button {
+    float: right;
+    font-weight: 400;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1rem;
+    line-height: 2.5rem;
+    letter-spacing: normal;
+    color: #ffffff;
+    min-width: 4.5rem;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    background-color: #07872b;
+    height: 2.5rem;
+    border: none;
+    transition: box-shadow .2s, background-color .2s;
+    border-radius: 0;
+}
+
+.title {
+    font-weight: 400;
+    font-family: sans-serif;
+    line-height: 1.25rem;
+    font-size: medium;
+    color: #030;
+}
+
+.scrollable-date-picker {
+    position: relative;
+    max-height: 273px;
+    overflow-x: auto;
+}
+
+.date-item {
+    position: relative;
+    margin-bottom: 0;
+    cursor: pointer;
+    transition: transform .2s;
+}
+/* 
+.list-group-item:active {
+   
+} */
