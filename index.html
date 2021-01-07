@@ -19,6 +19,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
     <link rel="stylesheet" href="freshly.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -50,121 +52,146 @@
                     </div>
                 </div>
             </div>
-            <div class="container-fluid flex-display">
-                <div class="row m-0 d-flex w-100">
-                    <div class="col-md-3 d-flex justify-content-center">
-                        <div class="card">
-                            <picture>
-                                <source
-                                    data-srcset="https://res.cloudinary.com/freshly/image/upload/q_auto:good,dpr_auto,f_auto,ar_1:1,c_fill/c_scale/v1494958610/updated-4-plan_uu0ijm.jpg"
-                                    media="(max-width = 768px)"
-                                    srcset="https://res.cloudinary.com/freshly/image/upload/q_auto:good,dpr_auto,f_auto,ar_1:1,c_fill/c_scale/v1494958610/updated-4-plan_uu0ijm.jpg">
-                                <img data-src="https://res.cloudinary.com/freshly/image/upload/q_auto:good,dpr_auto,f_auto,/v1494958610/updated-4-plan_uu0ijm.jpg"
-                                    class="card-img-top lazyloaded" alt=""
-                                    src="https://res.cloudinary.com/freshly/image/upload/q_auto:good,dpr_auto,f_auto,/v1494958610/updated-4-plan_uu0ijm.jpg">
-                            </picture>
-                            <div class="card-body">
-                                <div>
-                                    <h2 class="card-title flex-display">
-                                        <span class="display-4 mb-0 mb-lg-3">4</span>
-                                    </h2>
-                                    <span class="h4 text-uppercase flex-display  ">meals&nbsp;/&nbsp;week</span>
-                                    <p class="card-text mt-2 mb-0 mb-lg-3">
-                                        <span class="flex-display font-weight-500">$11.49&nbsp;/&nbsp;meal</span>
-                                    </p>
+            <div class="container-fluid pt-3 pt-lg-5 pt-xl-6 join-now-container">
+                <div class="px-2">
+                    <div class="row m-0 d-flex w-100">
+                        <div class="col-md-3 d-flex justify-content-center">
+                            <div class="card plan-card flex-row flex-lg-column mb-3">
+                                <picture>
+                                    <source
+                                        data-srcset="https://res.cloudinary.com/freshly/image/upload/q_auto:good,dpr_auto,f_auto,ar_1:1,c_fill/c_scale/v1494958610/updated-4-plan_uu0ijm.jpg"
+                                        media="(max-width = 768px)"
+                                        srcset="https://res.cloudinary.com/freshly/image/upload/q_auto:good,dpr_auto,f_auto,ar_1:1,c_fill/c_scale/v1494958610/updated-4-plan_uu0ijm.jpg">
+                                    <img data-src="https://res.cloudinary.com/freshly/image/upload/q_auto:good,dpr_auto,f_auto,/v1494958610/updated-4-plan_uu0ijm.jpg"
+                                        class="card-img-top lazyloaded" alt=""
+                                        src="https://res.cloudinary.com/freshly/image/upload/q_auto:good,dpr_auto,f_auto,/v1494958610/updated-4-plan_uu0ijm.jpg">
+                                </picture>
+                                <div class="card-body" data-price="11.49">
+                                    <div>
+                                        <h2 class="card-title flex-display">
+                                            <span class="display-4 mb-0 mb-lg-3">4</span>
+                                        </h2>
+                                        <span class="h4 text-uppercase flex-display  ">meals&nbsp;/&nbsp;week</span>
+                                        <p class="card-text mt-2 mb-0 mb-lg-3">
+                                            <span class="flex-display font-weight-500">$11.49&nbsp;/&nbsp;meal</span>
+                                        </p>
+                                    </div>
+                                    <form action="#example-basic-h-1" id="meal4">
+                                        <button name="button" type="submit"
+                                            class="btn btn-primary btn-lg btn-block d-none d-lg-block"
+                                            aria-label="Select the 4 meals plan">Select this
+                                            plan
+                                        </button>
+                                    </form>
                                 </div>
-                                <form action="#example-basic-h-1" id="meal4">
-                                    <button name="button" type="submit"
+                            </div>
+                        </div>
+                        <div class="col-md-3 d-flex justify-content-center">
+                            <div class="card plan-card flex-row flex-lg-column mb-3">
+                                <picture>
+                                    <source
+                                        data-srcset="https://res.cloudinary.com/freshly/image/upload/q_auto:good,dpr_auto,f_auto,ar_1:1,c_fill/c_scale/v1494958610/updated-6-plan_ifjrbr.jpg"
+                                        media="(max-width: 768px)"
+                                        srcset="https://res.cloudinary.com/freshly/image/upload/q_auto:good,dpr_auto,f_auto,ar_1:1,c_fill/c_scale/v1494958610/updated-6-plan_ifjrbr.jpg">
+                                    <img data-src="https://res.cloudinary.com/freshly/image/upload/q_auto:good,dpr_auto,f_auto,/v1494958610/updated-6-plan_ifjrbr.jpg"
+                                        class="card-img-top lazyloaded" alt=""
+                                        src="https://res.cloudinary.com/freshly/image/upload/q_auto:good,dpr_auto,f_auto,/v1494958610/updated-6-plan_ifjrbr.jpg">
+                                </picture>
+                                <div class="card-body" data-price="9.49">
+                                    <div>
+                                        <h2 class="card-title flex-display">
+                                            <span class="display-4 mb-0 mb-lg-3">6</span>
+                                        </h2>
+                                        <span class="h4 text-uppercase flex-display  ">meals&nbsp;/&nbsp;week</span>
+                                        <p class="card-text mt-2 mb-0 mb-lg-3">
+                                            <span class="flex-display font-weight-500">$9.49&nbsp;/&nbsp;meal</span>
+                                        </p>
+                                    </div>
+                                    <button name="button" type="submit" id="meal6"
                                         class="btn btn-primary btn-lg btn-block d-none d-lg-block"
-                                        aria-label="Select the 4 meals plan">Select this
-                                        plan
-                                    </button>
-                                </form>
+                                        aria-label="Select the 4 meals plan">Select this plan</button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-3 d-flex justify-content-center">
-                        <div class="card">
-                            <picture>
-                                <source
-                                    data-srcset="https://res.cloudinary.com/freshly/image/upload/q_auto:good,dpr_auto,f_auto,ar_1:1,c_fill/c_scale/v1494958610/updated-6-plan_ifjrbr.jpg"
-                                    media="(max-width: 768px)"
-                                    srcset="https://res.cloudinary.com/freshly/image/upload/q_auto:good,dpr_auto,f_auto,ar_1:1,c_fill/c_scale/v1494958610/updated-6-plan_ifjrbr.jpg">
-                                <img data-src="https://res.cloudinary.com/freshly/image/upload/q_auto:good,dpr_auto,f_auto,/v1494958610/updated-6-plan_ifjrbr.jpg"
-                                    class="card-img-top lazyloaded" alt=""
-                                    src="https://res.cloudinary.com/freshly/image/upload/q_auto:good,dpr_auto,f_auto,/v1494958610/updated-6-plan_ifjrbr.jpg">
-                            </picture>
-                            <div class="card-body">
-                                <div>
-                                    <h2 class="card-title flex-display">
-                                        <span class="display-4 mb-0 mb-lg-3">6</span>
-                                    </h2>
-                                    <span class="h4 text-uppercase flex-display  ">meals&nbsp;/&nbsp;week</span>
-                                    <p class="card-text mt-2 mb-0 mb-lg-3">
-                                        <span class="flex-display font-weight-500">$9.49&nbsp;/&nbsp;meal</span>
-                                    </p>
+                        <div class="col-md-3 d-flex justify-content-center">
+                            <div class="card plan-card flex-row flex-lg-column mb-3">
+                                <picture>
+                                    <source
+                                        data-srcset="https://res.cloudinary.com/freshly/image/upload/q_auto:good,dpr_auto,f_auto,ar_1:1,c_fill/c_scale/v1494958610/updated-8-plan_yuloqr.jpg"
+                                        media="(max-width: 768px)"
+                                        srcset="https://res.cloudinary.com/freshly/image/upload/q_auto:good,dpr_auto,f_auto,ar_1:1,c_fill/c_scale/v1494958610/updated-8-plan_yuloqr.jpg">
+                                    <img data-src="https://res.cloudinary.com/freshly/image/upload/q_auto:good,dpr_auto,f_auto,/v1494958610/updated-8-plan_yuloqr.jpg"
+                                        class="card-img-top lazyloaded" alt=""
+                                        src="https://res.cloudinary.com/freshly/image/upload/q_auto:good,dpr_auto,f_auto,/v1494958610/updated-8-plan_yuloqr.jpg">
+                                </picture>
+                                <div class="card-body" data-price="8.99">
+                                    <div>
+                                        <h2 class="card-title flex-display">
+                                            <span class="display-4 mb-0 mb-lg-3">10</span>
+                                        </h2>
+                                        <span class="h4 text-uppercase flex-display  ">meals&nbsp;/&nbsp;week</span>
+                                        <p class="card-text mt-2 mb-0 mb-lg-3">
+                                            <span class="flex-display font-weight-500">$8.99&nbsp;/&nbsp;meal</span>
+                                        </p>
+                                    </div>
+                                    <button name="button" type="submit" id="meal10"
+                                        class="btn btn-primary btn-lg btn-block d-none d-lg-block"
+                                        aria-label="Select the 4 meals plan">Select this plan</button>
                                 </div>
-                                <button name="button" type="submit" id="meal6"
-                                    class="btn btn-primary btn-lg btn-block d-none d-lg-block"
-                                    aria-label="Select the 4 meals plan">Select this plan</button>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-3 d-flex justify-content-center">
-                        <div class="card">
-                            <picture>
-                                <source
-                                    data-srcset="https://res.cloudinary.com/freshly/image/upload/q_auto:good,dpr_auto,f_auto,ar_1:1,c_fill/c_scale/v1494958610/updated-8-plan_yuloqr.jpg"
-                                    media="(max-width: 768px)"
-                                    srcset="https://res.cloudinary.com/freshly/image/upload/q_auto:good,dpr_auto,f_auto,ar_1:1,c_fill/c_scale/v1494958610/updated-8-plan_yuloqr.jpg">
-                                <img data-src="https://res.cloudinary.com/freshly/image/upload/q_auto:good,dpr_auto,f_auto,/v1494958610/updated-8-plan_yuloqr.jpg"
-                                    class="card-img-top lazyloaded" alt=""
-                                    src="https://res.cloudinary.com/freshly/image/upload/q_auto:good,dpr_auto,f_auto,/v1494958610/updated-8-plan_yuloqr.jpg">
-                            </picture>
-                            <div class="card-body">
-                                <div>
-                                    <h2 class="card-title flex-display">
-                                        <span class="display-4 mb-0 mb-lg-3">10</span>
-                                    </h2>
-                                    <span class="h4 text-uppercase flex-display  ">meals&nbsp;/&nbsp;week</span>
-                                    <p class="card-text mt-2 mb-0 mb-lg-3">
-                                        <span class="flex-display font-weight-500">$8.99&nbsp;/&nbsp;meal</span>
-                                    </p>
+                        <div class="col-md-3 d-flex justify-content-center">
+                            <div class="card plan-card flex-row flex-lg-column mb-3">
+                                <picture>
+                                    <source
+                                        data-srcset="https://res.cloudinary.com/freshly/image/upload/q_auto:good,dpr_auto,f_auto,ar_1:1,c_fill/c_scale/v1494958610/updated-12-plan_xgj7pt.jpg"
+                                        media="(max-width: 768px)"
+                                        srcset="https://res.cloudinary.com/freshly/image/upload/q_auto:good,dpr_auto,f_auto,ar_1:1,c_fill/c_scale/v1494958610/updated-12-plan_xgj7pt.jpg">
+                                    <img data-src="https://res.cloudinary.com/freshly/image/upload/q_auto:good,dpr_auto,f_auto,/v1494958610/updated-12-plan_xgj7pt.jpg"
+                                        class="card-img-top lazyloaded" alt=""
+                                        src="https://res.cloudinary.com/freshly/image/upload/q_auto:good,dpr_auto,f_auto,/v1494958610/updated-12-plan_xgj7pt.jpg">
+                                </picture>
+                                <div class="card-body" data-price="8.49">
+                                    <div>
+                                        <h2 class="card-title flex-display">
+                                            <span class="display-4 mb-0 mb-lg-3">12</span>
+                                        </h2>
+                                        <span class="h4 text-uppercase flex-display  ">meals&nbsp;/&nbsp;week</span>
+                                        <p class="card-text mt-2 mb-0 mb-lg-3">
+                                            <span class="flex-display font-weight-500">$8.49&nbsp;/&nbsp;meal</span>
+                                        </p>
+                                    </div>
+                                    <button name="button" type="submit" id="meal12"
+                                        class="btn btn-primary btn-lg btn-block d-none d-lg-block"
+                                        aria-label="Select the 4 meals plan">Select this plan</button>
                                 </div>
-                                <button name="button" type="submit" id="meal10"
-                                    class="btn btn-primary btn-lg btn-block d-none d-lg-block"
-                                    aria-label="Select the 4 meals plan">Select this plan</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 d-flex justify-content-center">
-                        <div class="card">
-                            <picture>
-                                <source
-                                    data-srcset="https://res.cloudinary.com/freshly/image/upload/q_auto:good,dpr_auto,f_auto,ar_1:1,c_fill/c_scale/v1494958610/updated-12-plan_xgj7pt.jpg"
-                                    media="(max-width: 768px)"
-                                    srcset="https://res.cloudinary.com/freshly/image/upload/q_auto:good,dpr_auto,f_auto,ar_1:1,c_fill/c_scale/v1494958610/updated-12-plan_xgj7pt.jpg">
-                                <img data-src="https://res.cloudinary.com/freshly/image/upload/q_auto:good,dpr_auto,f_auto,/v1494958610/updated-12-plan_xgj7pt.jpg"
-                                    class="card-img-top lazyloaded" alt=""
-                                    src="https://res.cloudinary.com/freshly/image/upload/q_auto:good,dpr_auto,f_auto,/v1494958610/updated-12-plan_xgj7pt.jpg">
-                            </picture>
-                            <div class="card-body">
-                                <div>
-                                    <h2 class="card-title flex-display">
-                                        <span class="display-4 mb-0 mb-lg-3">12</span>
-                                    </h2>
-                                    <span class="h4 text-uppercase flex-display  ">meals&nbsp;/&nbsp;week</span>
-                                    <p class="card-text mt-2 mb-0 mb-lg-3">
-                                        <span class="flex-display font-weight-500">$8.49&nbsp;/&nbsp;meal</span>
-                                    </p>
-                                </div>
-                                <button name="button" type="submit" id="meal12"
-                                    class="btn btn-primary btn-lg btn-block d-none d-lg-block"
-                                    aria-label="Select the 4 meals plan">Select this plan</button>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!-- <div class="background-default inline-faq-container text-left mx-2 mt-4 accessibility-patch">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="offset-1 col-10">
+                                <div>
+                                    <h3 class="text-center text-uppercase">Common questions</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-10 mx-auto mt-2 mb-7" id="inlineFaqAccordian" role="tablist" aria-multiselectable="true" data-controller="inline-faq">
+                                <div class="my-3">
+                                    <div role="tab" id="inlineFaqHeading0">
+                                        <div class="d-flex toggle-link mb-3 py-2 collapsed"  role="button" tabindex="0"><span>How many portions are your meals?</span></div>
+                                        <div class="ml-auto mt-1">
+                                            <span class="glyphicon glyphicon-color glyphicon-chevron-down" ></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
             </div>
         </section>
         <h3>Day</h3>
@@ -176,14 +203,15 @@
             </div>
             <div class="container-fluid p-2">
                 <div class="row d-flex justify-content-center">
-                    <div class="col-md-4 p-0 flex-display " id="tempDiv">
-                        <div class="template_master scrollable-date-picker mb3" id="datePickerContainer">
+                    <div class="col-md-4 p-0 flex-display date-picker " id="tempDiv">
+                        <div class="template_master scrollable-date-picker list-group" id="datePickerContainer">
                         </div>
                     </div>
                 </div>
                 <div class="row d-flex justify-content-center">
                     <div class="col-md-2 sol-sm-2 d-flex justify-content-center p-4">
-                        <button type="submit" data-test="submit-date" id="next-button" class="mb-2 btn btn-primary btn-lg btn-block">Next</button>
+                        <button type="submit" data-test="submit-date" id="next-button"
+                            class="mb-2 btn btn-primary btn-lg btn-block">Next</button>
                     </div>
                 </div>
             </div>
@@ -315,7 +343,8 @@
                         </ul>
                         <ul class="flex m-0 pt-2 row">
                             <li class="mb-3 col-12 col-md-6 col-lg-4 col-xl-3 ">
-                                <div class="col card p-2 d-flex justify-content-center" data-title="ZINGY BUFFALO CHICKEN">
+                                <div class="col card p-2 d-flex justify-content-center"
+                                    data-title="ZINGY BUFFALO CHICKEN">
                                     <img src="https://res.cloudinary.com/freshly/image/upload/c_fill,dpr_2,f_auto,w_341/v1602721634/production-meal-image-8771fb54-2c23-4063-8007-f5024df074c2.jpg"
                                         alt="image-001" class="w-100">
                                     <span class="d-flex justify-content-left">
@@ -551,15 +580,15 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col">
+                    <div class="col" id="col-second">
                         <div class=" px-0 row">
                             <div class="mb-0 d-flex flex-column justify-content-center py-3 col-7 col-md-12">
                                 <p>My delivery for:</p>
                                 <p id="delivery-date"></p>
                             </div>
                             <div class="py-3 py-md-0 mb-md-2 col-5 col-md-12">
-                                <button type="button" data-test="submit-cart"
-                                    class="disabled btn btn-primary btn-lg btn-block" id="submitCart">Next</button>
+                                <button type="button" class="btn btn-primary next-btn btn-lg btn-block" id="submitCart"
+                                    disabled>Next</button>
                             </div>
                             <div
                                 class="InstructionalText-module__container___1qMMn text-center align-self-center text-nowrap">
@@ -570,8 +599,7 @@
                                         </path>
                                     </svg></span><span id="mealAlert">Add your meals</span></div>
                         </div>
-                        <div class="row d-flex append-list" id="selectedRow" data-hide="hide">
-                        </div>
+
                     </div>
                 </div>
             </div>
@@ -608,7 +636,7 @@
                                                                             <div class="input-group">
                                                                                 <input type="text" name="firstName"
                                                                                     value id="first_name"
-                                                                                    class="is-valid string optional form-control"
+                                                                                    class=" form-control"
                                                                                     aria-invalid="false">
                                                                                 <div class="invalid-feedback">
                                                                                 </div>
@@ -620,8 +648,7 @@
                                                                                 Name</label>
                                                                             <div class="input-group"><input type="text"
                                                                                     name="lastName" value=""
-                                                                                    id="last_name"
-                                                                                    class="is-valid string optional form-control"
+                                                                                    id="last_name" class=" form-control"
                                                                                     aria-invalid="false">
                                                                                 <div class="invalid-feedback">
                                                                                 </div>
@@ -644,8 +671,7 @@
                                                                             Address</label>
                                                                         <div class="input-group"><input type="text"
                                                                                 name="fullName" value=" " disabled=""
-                                                                                id="full_name"
-                                                                                class="is-valid string optional form-control"
+                                                                                id="full_name" class=" form-control"
                                                                                 aria-invalid="false">
                                                                             <div class="invalid-feedback"></div>
                                                                         </div>
@@ -680,7 +706,7 @@
                                                                             Line 1</label>
                                                                         <div class="input-group"><input type="text"
                                                                                 name="line1" value="" id="line1"
-                                                                                class="is-valid string optional form-control"
+                                                                                class=" form-control"
                                                                                 aria-invalid="false">
                                                                             <div class="invalid-feedback"></div>
                                                                         </div>
@@ -697,7 +723,7 @@
                                                                             (optional)</label>
                                                                         <div class="input-group"><input type="text"
                                                                                 name="line2" value="" id="line2"
-                                                                                class="is-valid string optional form-control"
+                                                                                class=" form-control"
                                                                                 aria-invalid="false">
                                                                             <div class="invalid-feedback"></div>
                                                                         </div>
@@ -712,7 +738,7 @@
                                                                             class="small text-black-50 string optional">Phone</label>
                                                                         <div class="input-group"><input type="tel"
                                                                                 name="phone" value="" id="phone"
-                                                                                class="is-valid string optional form-control"
+                                                                                class=" form-control"
                                                                                 aria-invalid="false">
                                                                             <div class="invalid-feedback"></div>
                                                                         </div>
@@ -770,7 +796,7 @@
                                                                             updates)</label>
                                                                         <div class="input-group"><input type="text"
                                                                                 name="email" value="" id="email"
-                                                                                class="is-valid string optional form-control"
+                                                                                class=" form-control"
                                                                                 aria-invalid="false">
                                                                             <div class="invalid-feedback"></div>
                                                                         </div>
@@ -801,6 +827,55 @@
                                     </div>
                                 </div>
                             </div>
+                            <aside class="mb-3 stickey-top align-self-md-start col-12 col-md-5 order-md-1">
+                                <h4 class="mb-0 text-uppercase pt-3 mb-4 d-block d-md-none pt-4">
+                                    <small>order and meals summary</small>
+                                </h4>
+                                <h4 class="mb-0 text-uppercase pt-2 mb-4 d-none d-md-block">order summary</h4>
+                                <div id="order-summary" class="order-summary-card rounded-0 mb-3 mb-md-5 card">
+                                    <div class="py-2 px-3 card-body">
+                                        <ul class="list-group-flush list-group">
+                                            <li class="px-2 py-1 list-group-item">
+                                                <button type="button" class="pl-0 font-weight-normal btn btn-link">
+                                                    <u>+ Add Promo COde</u>
+                                                </button>
+                                            </li>
+                                            <li class="p-2 border-top-0 list-group-item">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <label class="float-left text-secondary">Delivery Date</label>
+                                                        <div class="input-group">
+                                                            <select name="dateSelect" id="dateSelect"
+                                                                class=" form-control delivery-day"
+                                                                aria-invalid="false"></select>
+                                                        </div>
+                                                        <div class="invalid-feedback"></div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="px-2 pt-2 pb-1 border-bottom-0 list-group-item">
+                                                <div class="clearfix" id="mealPrice">
+                                                </div>
+                                            </li>
+                                            <li class="px-2 pt-1 pb-2 border-top-0 list-group-item">
+                                                <div class="float-left text-secondary">Shipping</div>
+                                                <div class="float-right text-uppercase">$5.99</div>
+                                            </li>
+                                            <li class="p-2 list-group-item" id="todayTotal">
+                                                <div class="float-left font-weight-500">Today's Total</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <h4 class="mb-0 text-uppercase pt-2 mb-4 d-none d-md-block">My Meals</h4>
+                                <div class="rounded-0 card">
+                                    <div class="p-0 flex-grow-0 flex-shrink-0 card-body">
+                                        <ul class="list-group list-group-flush" id="checkoutMyMeals">
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </aside>
                         </div>
                     </div>
                 </div>

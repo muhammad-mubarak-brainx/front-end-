@@ -1,10 +1,28 @@
-/* * {
-    border: 1px solid black;
-} */
+.wizard>.actions {
+    display: none;
+}
+
+
+.btn-primary,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Roboto, sans-serif;
+}
 
 .wizard>.content>.body {
     position: relative;
     width: 100%;
+    background-color: #ffffff;
 }
 
 .flex-display {
@@ -16,6 +34,20 @@
 img:hover {
     cursor: pointer;
 }
+
+.plans-card-deck {
+    display: flex;
+}
+
+.plan-card {
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    cursor: pointer;
+}
+
+.plan-card:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
+}
+
 
 .images-size {
     display: flex;
@@ -87,15 +119,6 @@ li {
     cursor: pointer;
 }
 
-.list-group-item:active {
-    z-index: 2;
-    border-right: 0;
-    border-left: 0;
-    border-radius: 0;
-    color: blue;
-    
-}
-
 .subtitle {
     font-weight: 400;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -150,13 +173,58 @@ li {
 
 .date-item {
     position: relative;
-    margin-bottom: 0;
-    cursor: pointer;
-    transition: transform .2s;
+    background: transparent;
+}
+
+.scrollable-date-picker .date-item:active {
+    color: #030;
+    background-color: white;
+}
+
+.date-picker .list-group-item:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem;
+}
+
+.date-picker .list-group-item:active {
+    z-index: 2;
+    border-left: 2px solid green;
+    background-color: #fafafa;
+    color: #030;
+}
+
+.img-wrapper {
+    height: 50px;
+    width: 70px;
+    margin-left: 25px;
+    padding: 2px;
+}
+
+.date-picker .active-list {
+    border-left: 2px solid green;
+    background-color: #fafafa;
+    color: #030;
 }
 
 
-/* 
-.list-group-item:active {
-   
-} */
+
+.date-picker .list-group-item:hover {
+    transform: translateX(5px);
+    z-index: 1;
+    cursor: pointer;
+
+}
+
+.btn-primary.disabled,
+.btn-primary:disabled {
+    cursor: not-allowed;
+    opacity: .65;
+    color: #fff;
+    background-color: #07872b;
+    border-color: #07872b;
+
+}
+
+.btn-primary:hover {
+    background-color: #030;
+}
