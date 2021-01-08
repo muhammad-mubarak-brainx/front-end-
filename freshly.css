@@ -3,21 +3,11 @@
 }
 
 
-.btn-primary,
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: Roboto, sans-serif;
+html * {
+    font-family: 'Roboto', sans-ser;
+    font-size: 0.8rem;
 }
+
 
 .wizard>.content>.body {
     position: relative;
@@ -61,16 +51,22 @@ img:hover {
     height: 80%;
 }
 
+.images-size:first-child::after {
+    display: none;
+}
+
+
 .images-size::after {
     position: absolute;
     top: 6%;
-    right: 0;
+    left: 0px;
     display: block;
     width: 1px;
     height: 60%;
     content: "";
     background: #000;
 }
+
 
 .card-title {
     margin-bottom: .75rem;
@@ -121,7 +117,6 @@ li {
 
 .subtitle {
     font-weight: 400;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: .875rem;
     line-height: 1rem;
     letter-spacing: normal;
@@ -131,7 +126,6 @@ li {
 
 .specs {
     font-weight: 400;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: .75rem;
     line-height: .875rem;
     letter-spacing: normal;
@@ -141,7 +135,6 @@ li {
 .add-button {
     float: right;
     font-weight: 400;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 1rem;
     line-height: 2.5rem;
     letter-spacing: normal;
@@ -159,7 +152,6 @@ li {
 
 .title {
     font-weight: 400;
-    font-family: sans-serif;
     line-height: 1.25rem;
     font-size: medium;
     color: #030;
@@ -227,4 +219,16 @@ li {
 
 .btn-primary:hover {
     background-color: #030;
+}
+
+.card-scroll {
+    max-height: 80%;
+    overflow-x: auto !important;
+    overflow-y: scroll !important;
+}
+
+.cart-scroll {
+    max-height: 50%;
+    overflow-y: scroll !important;
+    overflow-x: auto !important;
 }

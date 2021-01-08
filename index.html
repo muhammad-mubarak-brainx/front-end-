@@ -27,14 +27,14 @@
     <div id="basic-steps">
         <h3>Plan</h3>
         <section id="sec-1">
-            <div class="container-fluid">
+            <div class="container-fluid on-mobile">
                 <div class="row d-flex m-0 p-4 justify-content-center">
                     <h1>CHOOSE A PLAN</h1>
                 </div>
                 <div class="d-flex m-0 p-2 justify-content-center">
                     Each Freshly meal is one serving, for one person, at one sitting.
                 </div>
-                <div class="row m-0 d-flex justify-content-center">
+                <div class="row m-0 d-flex justify-content-center ">
                     <div class="col-md-2 px-0 px-sm-2 images-size ">
                         <img class="position-images "
                             src="https://res.cloudinary.com/freshly/image/upload/q_auto:good,dpr_auto,f_auto/v1494958610/meal_sleeve_i19vxf"
@@ -220,367 +220,45 @@
         <section id="sec-3">
             <div class="container-fluid">
                 <div class="row m-0">
-                    <div class="col-md-10">
-                        <ul class="flex m-0 pt-2 row">
-                            <li class="mb-3 col-12 col-md-6 col-lg-4 col-xl-3 ">
-                                <div class="col card p-2 d-flex justify-content-center" data-title="STEAK PEPPERCORN">
-                                    <img src="https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80"
-                                        alt="image-001" class="w-100">
-                                    <span class="d-flex justify-content-left">
-                                        <h5 class="title">STEAK PEPPERCORN</h5>
-                                    </span>
-                                    <div class="row m-0">
-                                        <h6 class="subtitle">with Sautéed Carrots & French Green Beans</h6>
-                                    </div>
-                                    <div class="d-flex justify-content-between mt-auto ">
-                                        <div class="col-sm-2 p-1 specs  justify-content-left ">
-                                            510
-                                            <div>Cals</div>
+                    <div class="col-md-10 col-sm 10">
+                        <ul class="flex m-0 pt-2 row card-scroll" id="cardMeals">
+                            <template id="cartMeal">
+                                <li class="mb-3 col-12 col-md-6 col-lg-4 col-xl-3 ">
+                                    <div class="col card p-2 d-flex justify-content-center"
+                                        data-title="STEAK PEPPERCORN">
+                                        <img src="https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80"
+                                            alt="image-001" id="imageCard" class="w-100">
+                                        <span class="d-flex justify-content-left">
+                                            <h5 class="title" id="title">STEAK PEPPERCORN</h5>
+                                        </span>
+                                        <div class="row m-0">
+                                            <h6 class="subtitle" id="subtitle">with Sautéed Carrots & French Green Beans
+                                            </h6>
                                         </div>
-                                        <div class="col-sm-2 p-1 specs   justify-content-left ">
-                                            33g
-                                            <div>Carbs</div>
-                                        </div>
-                                        <div class="col-sm-2 p-1 specs justify-content-left">
-                                            29g
-                                            <div>Protein</div>
-                                        </div>
-                                        <div class="col p-1">
-                                            <button class="btn btn-primary add-button p-0" id="addButton">+Add</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="mb-3 col-12 col-md-6 col-lg-4 col-xl-3 ">
-                                <div class="col card p-2 d-flex justify-content-center"
-                                    data-title="Cauliflower shell beef bolognese">
-                                    <img src="https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_683,w_1024/v1602724105/production-meal-image-57e49562-348b-42f2-9ca6-9f40a95c8395.jpg"
-                                        alt="" class="w-100">
-                                    <span class="d-flex justify-content-left">
-                                        <h5 class="title">Cauliflower shell beef bolognese</h5>
-                                    </span>
-                                    <div class="row m-0">
-                                        <h6 class="subtitle">with Nonna’s Soffritto & Italian Cheeses</h6>
-                                    </div>
-                                    <div class="d-flex justify-content-between mt-auto ">
-                                        <div class="col-sm-2 p-1 specs  justify-content-left ">
-                                            540
-                                            <div>Cals</div>
-                                        </div>
-                                        <div class="col-sm-2 p-1 specs   justify-content-left ">
-                                            48g
-                                            <div>Carbs</div>
-                                        </div>
-                                        <div class="col-sm-2 p-1 specs justify-content-left">
-                                            30g
-                                            <div>Protein</div>
-                                        </div>
-                                        <div class="col p-1">
-                                            <button class="btn btn-primary add-button p-0" id="addButton">+Add</button>
+                                        <div class="d-flex justify-content-between mt-auto ">
+                                            <div class="col-sm-2 p-1 specs0  justify-content-left" id="spec0">
+                                                510
+                                                <div class="s-name0" id="sName0">Cals</div>
+                                            </div>
+                                            <div class="col-sm-2 p-1 specs1 justify-content-left " id="spec1">
+                                                33g
+                                                <div class="s-name1" id="sName1">Carbs</div>
+                                            </div>
+                                            <div class="col-sm-2 p-1 specs2 justify-content-left" id="spec2">
+                                                29g
+                                                <div class="s-name2" id="sName2">Protein</div>
+                                            </div>
+                                            <div class="col p-1">
+                                                <button
+                                                    class="btn btn-primary add-button p-0 cart-card-button">+Add</button>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </li>
-                            <li class="mb-3 col-12 col-md-6 col-lg-4 col-xl-3 ">
-                                <div class="col card p-2 d-flex justify-content-center"
-                                    data-title="PROTEIN-PACKED CHICKEN PARM">
-                                    <img src="https://res.cloudinary.com/freshly/image/upload/c_fill,dpr_2,f_auto,w_341/v1607770959/production-meal-image-7a62bb89-9bcb-4f1f-9f0f-d8372698d48e.jpg"
-                                        alt="image-001" class="w-100">
-                                    <span class="d-flex justify-content-left">
-                                        <h5 class="title">PROTEIN-PACKED CHICKEN PARM</h5>
-                                    </span>
-                                    <div class="row m-0">
-                                        <h6 class="subtitle">with Mozzarella & Garlicky Broccoli</h6>
-                                    </div>
-                                    <div class="d-flex justify-content-between mt-auto ">
-                                        <div class="col-sm-2 p-1 specs  justify-content-left ">
-                                            510
-                                            <div>Cals</div>
-                                        </div>
-                                        <div class="col-sm-2 p-1 specs   justify-content-left ">
-                                            33g
-                                            <div>Carbs</div>
-                                        </div>
-                                        <div class="col-sm-2 p-1 specs justify-content-left">
-                                            29g
-                                            <div>Protein</div>
-                                        </div>
-                                        <div class="col p-1">
-                                            <button class="btn btn-primary add-button p-0" id="addButton">+Add</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="mb-3 col-12 col-md-6 col-lg-4 col-xl-3 ">
-                                <div class="col card p-2 d-flex justify-content-center" data-title="HOMESTYLE CHICKEN">
-                                    <img src="https://res.cloudinary.com/freshly/image/upload/c_fill,dpr_2,f_auto,w_341/v1602723110/production-meal-image-0a78bae3-2e0c-4ab7-b420-154ed262d4d0.jpg"
-                                        alt="image-001" class="w-100">
-                                    <span class="d-flex justify-content-left">
-                                        <h5 class="title">HOMESTYLE CHICKEN</h5>
-                                    </span>
-                                    <div class="row m-0">
-                                        <h6 class="subtitle">with Masterful Mac & Cheese</h6>
-                                    </div>
-                                    <div class="d-flex justify-content-between mt-auto ">
-                                        <div class="col-sm-2 p-1 specs  justify-content-left ">
-                                            600
-                                            <div>Cals</div>
-                                        </div>
-                                        <div class="col-sm-2 p-1 specs   justify-content-left ">
-                                            45g
-                                            <div>Carbs</div>
-                                        </div>
-                                        <div class="col-sm-2 p-1 specs justify-content-left">
-                                            46g
-                                            <div>Protein</div>
-                                        </div>
-                                        <div class="col p-1">
-                                            <button class="btn btn-primary add-button p-0" id="addButton">+Add</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                        <ul class="flex m-0 pt-2 row">
-                            <li class="mb-3 col-12 col-md-6 col-lg-4 col-xl-3 ">
-                                <div class="col card p-2 d-flex justify-content-center"
-                                    data-title="ZINGY BUFFALO CHICKEN">
-                                    <img src="https://res.cloudinary.com/freshly/image/upload/c_fill,dpr_2,f_auto,w_341/v1602721634/production-meal-image-8771fb54-2c23-4063-8007-f5024df074c2.jpg"
-                                        alt="image-001" class="w-100">
-                                    <span class="d-flex justify-content-left">
-                                        <h5 class="title">ZINGY BUFFALO CHICKEN</h5>
-                                    </span>
-                                    <div class="row m-0">
-                                        <h6 class="subtitle">with Loaded Cauliflower</h6>
-                                    </div>
-                                    <div class="d-flex justify-content-between mt-auto ">
-                                        <div class="col-sm-2 p-1 specs  justify-content-left ">
-                                            470
-                                            <div>Cals</div>
-                                        </div>
-                                        <div class="col-sm-2 p-1 specs   justify-content-left ">
-                                            15g
-                                            <div>Carbs</div>
-                                        </div>
-                                        <div class="col-sm-2 p-1 specs justify-content-left">
-                                            40g
-                                            <div>Protein</div>
-                                        </div>
-                                        <div class="col p-1">
-                                            <button class="btn btn-primary add-button p-0" id="addButton">+Add</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="mb-3 col-12 col-md-6 col-lg-4 col-xl-3 ">
-                                <div class="col card p-2 d-flex justify-content-center" data-title="STEAK PEPPERCORN">
-                                    <img src="https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80"
-                                        alt="image-001" class="w-100">
-                                    <span class="d-flex justify-content-left">
-                                        <h5>STEAK PEPPERCORN</h5>
-                                    </span>
-                                    <div class="row m-0">
-                                        <h6 class="subtitle">with Sautéed Carrots & French Green Beans</h6>
-                                    </div>
-                                    <div class="d-flex justify-content-between mt-auto ">
-                                        <div class="col-sm-2 p-1 specs  justify-content-left ">
-                                            510
-                                            <div>Cals</div>
-                                        </div>
-                                        <div class="col-sm-2 p-1 specs   justify-content-left ">
-                                            33g
-                                            <div>Carbs</div>
-                                        </div>
-                                        <div class="col-sm-2 p-1 specs justify-content-left">
-                                            29g
-                                            <div>Protein</div>
-                                        </div>
-                                        <div class="col p-1">
-                                            <button class="btn btn-primary add-button p-0" id="addButton">+Add</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="mb-3 col-12 col-md-6 col-lg-4 col-xl-3 ">
-                                <div class="col card p-2 d-flex justify-content-center" data-title="STEAK PEPPERCORN">
-                                    <img src="https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80"
-                                        alt="image-001" class="w-100">
-                                    <span class="d-flex justify-content-left">
-                                        <h5>STEAK PEPPERCORN</h5>
-                                    </span>
-                                    <div class="row m-0">
-                                        <h6 class="subtitle">with Sautéed Carrots & French Green Beans</h6>
-                                    </div>
-                                    <div class="d-flex justify-content-between mt-auto ">
-                                        <div class="col-sm-2 p-1 specs  justify-content-left ">
-                                            510
-                                            <div>Cals</div>
-                                        </div>
-                                        <div class="col-sm-2 p-1 specs   justify-content-left ">
-                                            33g
-                                            <div>Carbs</div>
-                                        </div>
-                                        <div class="col-sm-2 p-1 specs justify-content-left">
-                                            29g
-                                            <div>Protein</div>
-                                        </div>
-                                        <div class="col p-1">
-                                            <button class="btn btn-primary add-button p-0" id="addButton">+Add</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="mb-3 col-12 col-md-6 col-lg-4 col-xl-3 ">
-                                <div class="col card p-2 d-flex justify-content-center" data-title="STEAK PEPPERCORN">
-                                    <img src="https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80"
-                                        alt="image-001" class="w-100">
-                                    <span class="d-flex justify-content-left">
-                                        <h5>STEAK PEPPERCORN</h5>
-                                    </span>
-                                    <div class="row m-0">
-                                        <h6 class="subtitle">with Sautéed Carrots & French Green Beans</h6>
-                                    </div>
-                                    <div class="d-flex justify-content-between mt-auto ">
-                                        <div class="col-sm-2 p-1 specs  justify-content-left ">
-                                            510
-                                            <div>Cals</div>
-                                        </div>
-                                        <div class="col-sm-2 p-1 specs   justify-content-left ">
-                                            33g
-                                            <div>Carbs</div>
-                                        </div>
-                                        <div class="col-sm-2 p-1 specs justify-content-left">
-                                            29g
-                                            <div>Protein</div>
-                                        </div>
-                                        <div class="col p-1">
-                                            <button class="btn btn-primary add-button p-0" id="addButton">+Add</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                        <ul class="flex m-0 pt-2 row">
-                            <li class="mb-3 col-12 col-md-6 col-lg-4 col-xl-3 ">
-                                <div class="col card p-2 d-flex justify-content-center" data-title="STEAK PEPPERCORN">
-                                    <img src="https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80"
-                                        alt="image-001" class="w-100">
-                                    <span class="d-flex justify-content-left">
-                                        <h5 class="title">STEAK PEPPERCORN</h5>
-                                    </span>
-                                    <div class="row m-0">
-                                        <h6 class="subtitle">with Sautéed Carrots & French Green Beans</h6>
-                                    </div>
-                                    <div class="d-flex justify-content-between mt-auto ">
-                                        <div class="col-sm-2 p-1 specs  justify-content-left ">
-                                            510
-                                            <div>Cals</div>
-                                        </div>
-                                        <div class="col-sm-2 p-1 specs   justify-content-left ">
-                                            33g
-                                            <div>Carbs</div>
-                                        </div>
-                                        <div class="col-sm-2 p-1 specs justify-content-left">
-                                            29g
-                                            <div>Protein</div>
-                                        </div>
-                                        <div class="col p-1">
-                                            <button class="btn btn-primary add-button p-0" id="addButton">+Add</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="mb-3 col-12 col-md-6 col-lg-4 col-xl-3 ">
-                                <div class="col card p-2 d-flex justify-content-center meal-card"
-                                    data-title="STEAK PEPPERCORN">
-                                    <img src="https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80"
-                                        alt="image-001" class="w-100">
-                                    <span class="d-flex justify-content-left">
-                                        <h5 class="title">STEAK PEPPERCORN</h5>
-                                    </span>
-                                    <div class="row m-0">
-                                        <h6 class="subtitle">with Sautéed Carrots & French Green Beans</h6>
-                                    </div>
-                                    <div class="d-flex justify-content-between mt-auto ">
-                                        <div class="col-sm-2 p-1 specs  justify-content-left ">
-                                            510
-                                            <div>Cals</div>
-                                        </div>
-                                        <div class="col-sm-2 p-1 specs   justify-content-left ">
-                                            33g
-                                            <div>Carbs</div>
-                                        </div>
-                                        <div class="col-sm-2 p-1 specs justify-content-left">
-                                            29g
-                                            <div>Protein</div>
-                                        </div>
-                                        <div class="col p-1">
-                                            <button class="btn btn-primary add-button p-0" id="addButton">+Add</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="mb-3 col-12 col-md-6 col-lg-4 col-xl-3 ">
-                                <div class="col card p-2 d-flex justify-content-center" data-title="STEAK PEPPERCORN">
-                                    <img src="https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80"
-                                        alt="image-001" class="w-100">
-                                    <span class="d-flex justify-content-left">
-                                        <h5 class="title">STEAK PEPPERCORN</h5>
-                                    </span>
-                                    <div class="row m-0">
-                                        <h6 class="subtitle">with Sautéed Carrots & French Green Beans</h6>
-                                    </div>
-                                    <div class="d-flex justify-content-between mt-auto ">
-                                        <div class="col-sm-2 p-1 specs  justify-content-left ">
-                                            510
-                                            <div>Cals</div>
-                                        </div>
-                                        <div class="col-sm-2 p-1 specs   justify-content-left ">
-                                            33g
-                                            <div>Carbs</div>
-                                        </div>
-                                        <div class="col-sm-2 p-1 specs justify-content-left">
-                                            29g
-                                            <div>Protein</div>
-                                        </div>
-                                        <div class="col p-1">
-                                            <button class="btn btn-primary add-button p-0" id="addButton">+Add</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="mb-3 col-12 col-md-6 col-lg-4 col-xl-3 ">
-                                <div class="col card p-2 d-flex justify-content-center" data-title="STEAK PEPPERCORN">
-                                    <img src="https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80"
-                                        alt="image-001" class="w-100">
-                                    <span class="d-flex justify-content-left">
-                                        <h5 class="title">STEAK PEPPERCORN</h5>
-                                    </span>
-                                    <div class="row m-0">
-                                        <h6 class="subtitle">with Sautéed Carrots & French Green Beans</h6>
-                                    </div>
-                                    <div class="d-flex justify-content-between mt-auto ">
-                                        <div class="col-sm-2 p-1 specs  justify-content-left ">
-                                            510
-                                            <div>Cals</div>
-                                        </div>
-                                        <div class="col-sm-2 p-1 specs   justify-content-left ">
-                                            33g
-                                            <div>Carbs</div>
-                                        </div>
-                                        <div class="col-sm-2 p-1 specs justify-content-left">
-                                            29g
-                                            <div>Protein</div>
-                                        </div>
-                                        <div class="col p-1">
-                                            <button class="btn btn-primary add-button p-0" id="addButton">+Add</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
+                                </li>
+                            </template>
                         </ul>
                     </div>
-                    <div class="col" id="col-second">
+                    <div class="col">
                         <div class=" px-0 row">
                             <div class="mb-0 d-flex flex-column justify-content-center py-3 col-7 col-md-12">
                                 <p>My delivery for:</p>
@@ -591,7 +269,7 @@
                                     disabled>Next</button>
                             </div>
                             <div
-                                class="InstructionalText-module__container___1qMMn text-center align-self-center text-nowrap">
+                                class="InstructionalText-module__container___1qMMn text-center align-self-center w-100 text-nowrap">
                                 <span class="d-inline-block"><svg xmlns="http://www.w3.org/2000/svg" width="16"
                                         height="20" viewBox="0 0 16 20">
                                         <path fill="#CD2C1E"
@@ -599,7 +277,11 @@
                                         </path>
                                     </svg></span><span id="mealAlert">Add your meals</span></div>
                         </div>
+                        <div class="row cart-scroll">
+                            <div class="col " id="col-second">
 
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -823,7 +505,9 @@
                                                 </div>
                                             </form>
                                         </div>
-                                        <div class="col-md-10 offset-md-1"></div>
+                                        <div class="col-md-10 offset-md-1">
+
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -869,10 +553,7 @@
                                 </div>
                                 <h4 class="mb-0 text-uppercase pt-2 mb-4 d-none d-md-block">My Meals</h4>
                                 <div class="rounded-0 card">
-                                    <div class="p-0 flex-grow-0 flex-shrink-0 card-body">
-                                        <ul class="list-group list-group-flush" id="checkoutMyMeals">
-
-                                        </ul>
+                                    <div class="p-0 flex-grow-0 flex-shrink-0 card-body check-out-meals">
                                     </div>
                                 </div>
                             </aside>
