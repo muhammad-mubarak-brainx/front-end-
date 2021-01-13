@@ -1,11 +1,14 @@
+@font-face {
+    font-family: GoodHeadline;
+    src: url(./fonts/InriaSans-Regular.ttf);
+  }
+
 .wizard>.actions {
     display: none;
 }
 
-
 html * {
     font-family: 'Roboto', sans-ser;
-    font-size: 0.8rem;
 }
 
 
@@ -21,17 +24,12 @@ html * {
 }
 
 
-img:hover {
-    cursor: pointer;
-}
-
 .plans-card-deck {
     display: flex;
 }
 
 .plan-card {
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-    cursor: pointer;
 }
 
 .plan-card:hover {
@@ -160,7 +158,7 @@ li {
 .scrollable-date-picker {
     position: relative;
     max-height: 273px;
-    overflow-x: auto;
+    overflow-x: hidden;
 }
 
 .date-item {
@@ -193,7 +191,7 @@ li {
 }
 
 .date-picker .active-list {
-    border-left: 2px solid green;
+    border-left: 6px solid green;
     background-color: #fafafa;
     color: #030;
 }
@@ -222,13 +220,137 @@ li {
 }
 
 .card-scroll {
-    max-height: 80%;
+    max-height: calc(100vh - 70px);
     overflow-x: auto !important;
     overflow-y: scroll !important;
 }
 
-.cart-scroll {
-    max-height: 50%;
-    overflow-y: scroll !important;
-    overflow-x: auto !important;
+.add-promo-code {
+    color: #07872b;
+}
+
+.add-promo-code:hover {
+    color: #04571c;
+    cursor: pointer;
+}
+
+.small {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+#checkout_container .form-control {
+    border: 1px solid #666;
+    border-radius: 2px;
+}
+
+.delivery-address {
+    color: #333333;
+    letter-spacing: .25px;
+    line-height: 1.5rem;
+    padding-top: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.check-out {
+    color: #030;
+    font-family: GoodHeadline;
+    font-size: 1.5rem;
+}
+.meal-order-summary {
+    color: #030;
+    font-family: GoodHeadline;
+    font-size: 1.5rem;
+}
+
+.choose-plan {
+    color: #030;
+    font-family: GoodHeadline;
+    font-size: 32px;
+}
+
+.delivery-select {
+    cursor: pointer;
+}
+
+.wizard>.content>.body {
+    padding: 0 !important;
+}
+
+.meal-wrapper {
+    width: calc(100% - 320px);
+}
+
+.cart-wrapper {
+    position: relative;
+    width: 320px;
+    height: calc(100vh - 70px);
+}
+
+.cart-footer {
+    position: absolute;
+    bottom: 0;
+}
+
+.cart-footer .btn {
+    float: right;
+}
+
+.btn-link {
+    font-weight: 300;
+    color: #07872b;
+    background-color: transparent;
+}
+
+.btn-link:hover {
+    color: #030;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.cart-footer-counter {
+    font-weight: 400;
+    font-family: Roboto;
+    font-size: 1.125rem;
+    line-height: 1.25rem;
+    letter-spacing: normal;
+    color: #030;
+}
+
+.custom-font {
+    font-family: GoodHeadline;
+}
+
+.cart-custom-font {
+    font-family: Roboto;
+    font-size: 16px;
+}
+
+.custom-font-cart-list {
+    font-family: GoodHeadline;
+    font-size: 1.2rem;
+    color: #030;
+}
+
+.custon-font-size {
+    font-size: 1rem;
+    font-family: Roboto;
+    line-height: 1.5rem;
+    font-weight: 500;
+}
+
+.my-meals {
+    font-family: GoodHeadline;
+    color: #030;
+    font-size: 24px;
+}
+
+.total-price {
+    font-family: Roboto;
+    font-size: 16px;
+    color: #030;
+}
+
+.custom-font-size {
+    font-size: 1.2rem;
 }

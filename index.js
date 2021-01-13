@@ -1,71 +1,42 @@
-var mealId;
+var mealPlan;
 var price;
+mealCount = 0;
 const deliveryCharges = 5.99;
 var mealArray = {}
 
 
-$("#meal4").click(function () {
-    mealId = 4;
-    price = $(this).closest("div").data("price")
-    $("#basic-steps").steps("next");
-    $(function () {
-        loadDays()
-    });
-});
-
-$("#meal6").click(function () {
-    mealId = 6;
-    price = $(this).closest("div").data("price")
-    $("#basic-steps").steps("next");
-    $(function () {
-        loadDays()
-    });
-
-});
-
-$("#meal10").click(function () {
-    mealId = 10;
-    price = $(this).closest("div").data("price")
-    $("#basic-steps").steps("next");
-    $(function () {
-        loadDays()
-    });
-});
-
-$("#meal12").click(function () {
-    mealId = 12;
-    price = $(this).closest("div").data("price")
-    $("#basic-steps").steps("next");
+$(".btn-meal-plan").click(function () {
+    mealPlan = $(this).closest(".plan-card").data("meal-plan")
+    price = $(this).closest(".plan-card").data("price")
+    $("#freshly-steps").steps("next");
     $(function () {
         loadDays()
     });
 });
 
 loadDays = () => {
-    console.log("I am called here ")
     let today = moment().isoWeekday();
     let nextMonday = countMonday(today)
     createList(nextMonday)
 }
 
-mealCount = 0;
+
 $("body").on('click', ".add-button", function () {
-    console.log("I am clicked")
-    title = $(this).closest(".card").data("title");
+    title = $($(this).closest(".card").find(".title")[0]).text();
     titleImage = $(this).closest(".card").find("img").attr("src");
     mealsCounter(title, titleImage)
     appendCart(title, titleImage);
     mealCount++;
-    if (mealCount === mealId) {
+    if (mealCount === mealPlan) {
         $("#mealAlert").text('All Set');
         $('#submitCart').prop('disabled', false);
     }
     else {
-        if ((mealId - mealCount) > 0) {
-            $("#mealAlert").text('Add' + ' ' + (mealId - mealCount) + ' ' + 'more meals');
+        if ((mealPlan - mealCount) > 0) {
+            $("#mealAlert").text('Add' + ' ' + (mealPlan - mealCount) + ' ' + 'more meals');
         }
         else {
-            $("#mealAlert").text('Remove' + ' ' + Math.abs(mealId - mealCount) + ' ' + 'meals');
+            $("#mealAlert").text('Remove' + ' ' + Math.abs(mealPlan - mealCount) + ' ' + 'meals');
         }
         $('#submitCart').prop('disabled', true);
     }
@@ -73,20 +44,17 @@ $("body").on('click', ".add-button", function () {
 
 appendCart = (title, image) => {
     container = ' <div class="row d-flex append-list"><div class="col-md-2 d-flex justify-content-center p-0"> <img src="' + image + '" class="w-100" style="object-fit:cover"></div> <div class="col-md-8 d-flex justify-content-center p-1"<h2 class="title">' + title + '</h2></div><div class= "col-md-2 d-flex justify-content-center p-0"><button class="btn btn-clear">X</button></div></div>'
-    $("#col-second").append(container);
+    $("#cart-second-col").append(container);
+    $(".cart-footer-counter").text((mealCount + 1) + '/' + mealPlan)
 }
 
 mealsCounter = (title, titleImage) => {
 
     if (Object.keys(mealArray).includes(title)) {
         count = mealArray[title].count
-        console.log(count)
         mealArray[title] = { count: count + 1, titleImage: titleImage }
-        console.log(mealArray[title])
     } else {
-        console.log(" i am inside the else mealsCounter")
         mealArray[title] = { count: 1, titleImage: titleImage }
-        console.log(mealArray[title])
     }
 }
 
@@ -94,24 +62,24 @@ mealsCounter = (title, titleImage) => {
 $("body").on('click', ".btn-clear", function () {
     mealCount--;
     $(this).closest(".append-list").remove();
-    if ((mealCount - mealId) == 0) {
+    $(".cart-footer-counter").text(mealCount + '/' + mealPlan)
+    if ((mealCount - mealPlan) == 0) {
         count = mealArray[title].count
         mealArray[title] = { count: count - 1, titleImage: titleImage }
         $("#mealAlert").text('All Set');
         $('#submitCart').prop('disabled', false);
     } else {
-        if ((mealCount - mealId) < 0) {
+        if ((mealCount - mealPlan) < 0) {
             count = mealArray[title].count
             mealArray[title] = { count: count - 1, titleImage: titleImage }
-            $("#mealAlert").text('Add' + ' ' + Math.abs(mealCount - mealId) + ' ' + 'meals');
+            $("#mealAlert").text('Add' + ' ' + Math.abs(mealCount - mealPlan) + ' ' + 'meals');
             $('#submitCart').prop('disabled', true);
 
         } else {
             count = mealArray[title].count
             mealArray[title] = { count: count - 1, titleImage: titleImage }
-            $("#mealAlert").text('Remove' + ' ' + Math.abs(mealCount - mealId) + ' ' + 'meals');
+            $("#mealAlert").text('Remove' + ' ' + Math.abs(mealCount - mealPlan) + ' ' + 'meals');
             $('#submitCart').prop('disabled', true);
-            console.log(mealArray)
         }
     }
 });
@@ -121,7 +89,7 @@ $("body").on('click', ".next-btn", function () {
     let today = moment().isoWeekday();
     let nextMonday = countMonday(today)
     let dayCount = 2
-    $("#basic-steps").steps("next");
+    $("#freshly-steps").steps("next");
     $(".delivery-day").append($('<option>', {
         value: 0,
         text: nextMonday
@@ -139,26 +107,29 @@ $("body").on('click', ".next-btn", function () {
 });
 
 appendPriceList = () => {
-    totalPrice = mealId * price
-    console.log(totalPrice)
-    let mealList = '<div class="float-left text-secondary">' + mealId + ' ' + 'Meals Per Week' + '</div> <div class="float-right">' + '$' + totalPrice + '</div>'
+    totalPrice = mealPlan * price
+    let mealList = '<div class="float-left text-secondary cart-custom-font">' + mealPlan + ' ' + 'Meals Per Week' + '</div> <div class="float-right cart-custom-font">' + '$' + totalPrice + '</div>'
     $("#mealPrice").append(mealList)
-    let todayTotal = ' <div class="float-right font-weight-500">' + '$' + (totalPrice + deliveryCharges) + '</div>'
+    let todayTotal = ' <div class="float-right font-weight-500 total-price">' + '$' + (totalPrice + deliveryCharges) + '</div>'
     $("#todayTotal").append(todayTotal)
 
 }
 
 appendMyMeals = () => {
-    console.log("i am inside the meal list loop")
     for (const key in mealArray) {
-        console.log(mealArray[key].titleImage)
-        let myMealsList = '<li class="px-0 flex-shrink-0 list-group-item"><figure class="my-meals-item d-flex align-items-center mb-0"><div class="font-weight-500 text-center ml-2">' + mealArray[key].count + '</div><div> <img src="' + mealArray[key].titleImage + '"class="img-wrapper" ></div><div class="info-wrapper pl-4 pr-4 col">' + key + '</div></figure></li>'
+        let myMealsList = '<li class="px-0 flex-shrink-0 list-group-item"><figure class="my-meals-item d-flex align-items-center mb-0"><div class="font-weight-500 text-center ml-2">' + mealArray[key].count + '</div><div> <img src="' + mealArray[key].titleImage + '"class="img-wrapper" ></div><div class="info-wrapper pl-4 pr-4 col custom-font-cart-list">' + key + '</div></figure></li>'
         $(".check-out-meals").append(myMealsList)
     }
 
-    console.log(mealArray)
-
 }
+
+$("body").on('click', ".btn-link", function () {
+    $("#cart-second-col").empty()
+    $("#mealAlert").text('Add' + ' ' + mealPlan + ' ' + 'meals');
+    mealCount = 0
+    mealArray = {}
+    $(".cart-footer-counter").text(mealCount + '/' + mealPlan)
+})
 
 createList = (monday) => {
 
@@ -185,7 +156,6 @@ listItemListners = () => {
 
     $("#item").on("click", function (e) {
         selectedDate = e.target.textContent
-        console.log(e.target)
         $('.list-group-item').removeClass('active-list');
         e.target.className = "list-group-item active-list"
         if (selectedDate) {
@@ -196,7 +166,7 @@ listItemListners = () => {
     });
 
     $("#next-button").bind("click", function () {
-        $("#basic-steps").steps("next");
+        $("#freshly-steps").steps("next");
         $("#delivery-date").append(selectedDate)
         fetchMeals()
     });
@@ -204,11 +174,12 @@ listItemListners = () => {
 
 
 fetchMeals = () => {
-    console.log("I am called")
     let meals = mealCards();
     for (let i = 0; i < meals.length; i++) {
         cardTemplate(meals[i])
     }
+
+    $(".cart-footer-counter").text(mealCount + '/' + mealPlan)
 }
 
 
@@ -302,8 +273,6 @@ cardTemplate = (mealList) => {
     clone = template.content.cloneNode(true)
     body.appendChild(clone)
 }
-
-
 
 countMonday = (today) => {
     let dayINeed = 1;

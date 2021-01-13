@@ -24,12 +24,12 @@
 </head>
 
 <body>
-    <div id="basic-steps">
+    <div id="freshly-steps">
         <h3>Plan</h3>
         <section id="sec-1">
             <div class="container-fluid on-mobile">
                 <div class="row d-flex m-0 p-4 justify-content-center">
-                    <h1>CHOOSE A PLAN</h1>
+                    <h1 class="choose-plan">CHOOSE A PLAN</h1>
                 </div>
                 <div class="d-flex m-0 p-2 justify-content-center">
                     Each Freshly meal is one serving, for one person, at one sitting.
@@ -56,7 +56,8 @@
                 <div class="px-2">
                     <div class="row m-0 d-flex w-100">
                         <div class="col-md-3 d-flex justify-content-center">
-                            <div class="card plan-card flex-row flex-lg-column mb-3">
+                            <div class="card plan-card flex-row flex-lg-column mb-3" data-price="11.49"
+                                data-meal-plan="4">
                                 <picture>
                                     <source
                                         data-srcset="https://res.cloudinary.com/freshly/image/upload/q_auto:good,dpr_auto,f_auto,ar_1:1,c_fill/c_scale/v1494958610/updated-4-plan_uu0ijm.jpg"
@@ -66,19 +67,19 @@
                                         class="card-img-top lazyloaded" alt=""
                                         src="https://res.cloudinary.com/freshly/image/upload/q_auto:good,dpr_auto,f_auto,/v1494958610/updated-4-plan_uu0ijm.jpg">
                                 </picture>
-                                <div class="card-body" data-price="11.49">
+                                <div class="card-body">
                                     <div>
                                         <h2 class="card-title flex-display">
-                                            <span class="display-4 mb-0 mb-lg-3">4</span>
+                                            <span class="display-4 mb-0 mb-lg-3 custom-font">4</span>
                                         </h2>
-                                        <span class="h4 text-uppercase flex-display  ">meals&nbsp;/&nbsp;week</span>
-                                        <p class="card-text mt-2 mb-0 mb-lg-3">
-                                            <span class="flex-display font-weight-500">$11.49&nbsp;/&nbsp;meal</span>
+                                        <span class="h4 text-uppercase flex-display custom-font ">meals&nbsp;/&nbsp;week</span>
+                                        <p class="card-text mt-2 mb-0 mb-lg-3 ">
+                                            <span class="flex-display custom-font-size ">$11.49&nbsp;/&nbsp;meal</span>
                                         </p>
                                     </div>
-                                    <form action="#example-basic-h-1" id="meal4">
+                                    <form action="#example-basic-h-1">
                                         <button name="button" type="submit"
-                                            class="btn btn-primary btn-lg btn-block d-none d-lg-block"
+                                            class="btn btn-primary btn-lg btn-block d-none d-lg-block btn-meal-plan"
                                             aria-label="Select the 4 meals plan">Select this
                                             plan
                                         </button>
@@ -87,7 +88,8 @@
                             </div>
                         </div>
                         <div class="col-md-3 d-flex justify-content-center">
-                            <div class="card plan-card flex-row flex-lg-column mb-3">
+                            <div class="card plan-card flex-row flex-lg-column mb-3" data-price="9.49"
+                                data-meal-plan="6">
                                 <picture>
                                     <source
                                         data-srcset="https://res.cloudinary.com/freshly/image/upload/q_auto:good,dpr_auto,f_auto,ar_1:1,c_fill/c_scale/v1494958610/updated-6-plan_ifjrbr.jpg"
@@ -97,24 +99,25 @@
                                         class="card-img-top lazyloaded" alt=""
                                         src="https://res.cloudinary.com/freshly/image/upload/q_auto:good,dpr_auto,f_auto,/v1494958610/updated-6-plan_ifjrbr.jpg">
                                 </picture>
-                                <div class="card-body" data-price="9.49">
+                                <div class="card-body">
                                     <div>
                                         <h2 class="card-title flex-display">
-                                            <span class="display-4 mb-0 mb-lg-3">6</span>
+                                            <span class="display-4 mb-0 mb-lg-3 custom-font">6</span>
                                         </h2>
-                                        <span class="h4 text-uppercase flex-display  ">meals&nbsp;/&nbsp;week</span>
+                                        <span class="h4 text-uppercase flex-display custom-font ">meals&nbsp;/&nbsp;week</span>
                                         <p class="card-text mt-2 mb-0 mb-lg-3">
-                                            <span class="flex-display font-weight-500">$9.49&nbsp;/&nbsp;meal</span>
+                                            <span class="flex-display custom-font-size">$9.49&nbsp;/&nbsp;meal</span>
                                         </p>
                                     </div>
-                                    <button name="button" type="submit" id="meal6"
-                                        class="btn btn-primary btn-lg btn-block d-none d-lg-block"
+                                    <button name="button" type="submit"
+                                        class="btn btn-primary btn-lg btn-block d-none d-lg-block btn-meal-plan"
                                         aria-label="Select the 4 meals plan">Select this plan</button>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-3 d-flex justify-content-center">
-                            <div class="card plan-card flex-row flex-lg-column mb-3">
+                            <div class="card plan-card flex-row flex-lg-column mb-3" data-price="8.99"
+                                data-meal-plan="6">
                                 <picture>
                                     <source
                                         data-srcset="https://res.cloudinary.com/freshly/image/upload/q_auto:good,dpr_auto,f_auto,ar_1:1,c_fill/c_scale/v1494958610/updated-8-plan_yuloqr.jpg"
@@ -124,24 +127,25 @@
                                         class="card-img-top lazyloaded" alt=""
                                         src="https://res.cloudinary.com/freshly/image/upload/q_auto:good,dpr_auto,f_auto,/v1494958610/updated-8-plan_yuloqr.jpg">
                                 </picture>
-                                <div class="card-body" data-price="8.99">
+                                <div class="card-body">
                                     <div>
                                         <h2 class="card-title flex-display">
-                                            <span class="display-4 mb-0 mb-lg-3">10</span>
+                                            <span class="display-4 mb-0 mb-lg-3 custom-font">10</span>
                                         </h2>
-                                        <span class="h4 text-uppercase flex-display  ">meals&nbsp;/&nbsp;week</span>
+                                        <span class="h4 text-uppercase flex-display custom-font ">meals&nbsp;/&nbsp;week</span>
                                         <p class="card-text mt-2 mb-0 mb-lg-3">
-                                            <span class="flex-display font-weight-500">$8.99&nbsp;/&nbsp;meal</span>
+                                            <span class="flex-display custom-font-size">$8.99&nbsp;/&nbsp;meal</span>
                                         </p>
                                     </div>
-                                    <button name="button" type="submit" id="meal10"
-                                        class="btn btn-primary btn-lg btn-block d-none d-lg-block"
+                                    <button name="button" type="submit"
+                                        class="btn btn-primary btn-lg btn-block d-none d-lg-block btn-meal-plan"
                                         aria-label="Select the 4 meals plan">Select this plan</button>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-3 d-flex justify-content-center">
-                            <div class="card plan-card flex-row flex-lg-column mb-3">
+                            <div class="card plan-card flex-row flex-lg-column mb-3" data-price="8.49"
+                                data-meal-plan="12">
                                 <picture>
                                     <source
                                         data-srcset="https://res.cloudinary.com/freshly/image/upload/q_auto:good,dpr_auto,f_auto,ar_1:1,c_fill/c_scale/v1494958610/updated-12-plan_xgj7pt.jpg"
@@ -151,47 +155,24 @@
                                         class="card-img-top lazyloaded" alt=""
                                         src="https://res.cloudinary.com/freshly/image/upload/q_auto:good,dpr_auto,f_auto,/v1494958610/updated-12-plan_xgj7pt.jpg">
                                 </picture>
-                                <div class="card-body" data-price="8.49">
+                                <div class="card-body">
                                     <div>
                                         <h2 class="card-title flex-display">
-                                            <span class="display-4 mb-0 mb-lg-3">12</span>
+                                            <span class="display-4 mb-0 mb-lg-3 custom-font">12</span>
                                         </h2>
-                                        <span class="h4 text-uppercase flex-display  ">meals&nbsp;/&nbsp;week</span>
+                                        <span class="h4 text-uppercase flex-display custom-font ">meals&nbsp;/&nbsp;week</span>
                                         <p class="card-text mt-2 mb-0 mb-lg-3">
-                                            <span class="flex-display font-weight-500">$8.49&nbsp;/&nbsp;meal</span>
+                                            <span class="flex-display custom-font-size">$8.49&nbsp;/&nbsp;meal</span>
                                         </p>
                                     </div>
-                                    <button name="button" type="submit" id="meal12"
-                                        class="btn btn-primary btn-lg btn-block d-none d-lg-block"
+                                    <button name="button" type="submit"
+                                        class="btn btn-primary btn-lg btn-block d-none d-lg-block btn-meal-plan"
                                         aria-label="Select the 4 meals plan">Select this plan</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- <div class="background-default inline-faq-container text-left mx-2 mt-4 accessibility-patch">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="offset-1 col-10">
-                                <div>
-                                    <h3 class="text-center text-uppercase">Common questions</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12 col-md-10 mx-auto mt-2 mb-7" id="inlineFaqAccordian" role="tablist" aria-multiselectable="true" data-controller="inline-faq">
-                                <div class="my-3">
-                                    <div role="tab" id="inlineFaqHeading0">
-                                        <div class="d-flex toggle-link mb-3 py-2 collapsed"  role="button" tabindex="0"><span>How many portions are your meals?</span></div>
-                                        <div class="ml-auto mt-1">
-                                            <span class="glyphicon glyphicon-color glyphicon-chevron-down" ></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
             </div>
         </section>
         <h3>Day</h3>
@@ -219,70 +200,77 @@
         <h3>Meals</h3>
         <section id="sec-3">
             <div class="container-fluid">
-                <div class="row m-0">
-                    <div class="col-md-10 col-sm 10">
-                        <ul class="flex m-0 pt-2 row card-scroll" id="cardMeals">
-                            <template id="cartMeal">
-                                <li class="mb-3 col-12 col-md-6 col-lg-4 col-xl-3 ">
-                                    <div class="col card p-2 d-flex justify-content-center"
-                                        data-title="STEAK PEPPERCORN">
-                                        <img src="https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80"
-                                            alt="image-001" id="imageCard" class="w-100">
-                                        <span class="d-flex justify-content-left">
-                                            <h5 class="title" id="title">STEAK PEPPERCORN</h5>
-                                        </span>
-                                        <div class="row m-0">
-                                            <h6 class="subtitle" id="subtitle">with Sautéed Carrots & French Green Beans
-                                            </h6>
+                <div class="d-inline-block float-left meal-wrapper">
+                    <div class="row m-0">
+                        <div class="col-12">
+                            <ul class="flex m-0 pt-2 row card-scroll" id="cardMeals">
+                                <template id="cartMeal">
+                                    <li class="mb-3 col-12 col-md-6 col-lg-4 col-xl-3 ">
+                                        <div class="col card p-2 d-flex justify-content-center">
+                                            <img src="https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80"
+                                                alt="image-001" id="imageCard" class="w-100">
+                                            <span class="d-flex justify-content-left">
+                                                <h5 class="title" id="title"></h5>
+                                            </span>
+                                            <div class="row m-0">
+                                                <h6 class="subtitle" id="subtitle">
+                                                </h6>
+                                            </div>
+                                            <div class="d-flex justify-content-between mt-auto ">
+                                                <div class="col-sm-2 p-1 specs0  justify-content-left" id="spec0">
+                                                    510
+                                                    <div class="s-name0" id="sName0">Cals</div>
+                                                </div>
+                                                <div class="col-sm-2 p-1 specs1 justify-content-left " id="spec1">
+                                                    33g
+                                                    <div class="s-name1" id="sName1">Carbs</div>
+                                                </div>
+                                                <div class="col-sm-2 p-1 specs2 justify-content-left" id="spec2">
+                                                    29g
+                                                    <div class="s-name2" id="sName2">Protein</div>
+                                                </div>
+                                                <div class="col p-1">
+                                                    <button
+                                                        class="btn btn-primary add-button p-0 cart-card-button">+Add</button>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="d-flex justify-content-between mt-auto ">
-                                            <div class="col-sm-2 p-1 specs0  justify-content-left" id="spec0">
-                                                510
-                                                <div class="s-name0" id="sName0">Cals</div>
-                                            </div>
-                                            <div class="col-sm-2 p-1 specs1 justify-content-left " id="spec1">
-                                                33g
-                                                <div class="s-name1" id="sName1">Carbs</div>
-                                            </div>
-                                            <div class="col-sm-2 p-1 specs2 justify-content-left" id="spec2">
-                                                29g
-                                                <div class="s-name2" id="sName2">Protein</div>
-                                            </div>
-                                            <div class="col p-1">
-                                                <button
-                                                    class="btn btn-primary add-button p-0 cart-card-button">+Add</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                            </template>
-                        </ul>
-                    </div>
-                    <div class="col">
-                        <div class=" px-0 row">
-                            <div class="mb-0 d-flex flex-column justify-content-center py-3 col-7 col-md-12">
-                                <p>My delivery for:</p>
-                                <p id="delivery-date"></p>
-                            </div>
-                            <div class="py-3 py-md-0 mb-md-2 col-5 col-md-12">
-                                <button type="button" class="btn btn-primary next-btn btn-lg btn-block" id="submitCart"
-                                    disabled>Next</button>
-                            </div>
-                            <div
-                                class="InstructionalText-module__container___1qMMn text-center align-self-center w-100 text-nowrap">
-                                <span class="d-inline-block"><svg xmlns="http://www.w3.org/2000/svg" width="16"
-                                        height="20" viewBox="0 0 16 20">
-                                        <path fill="#CD2C1E"
-                                            d="M7.455 11.473c.877 0 1.869.545 1.869 1.683 0 1.137-.797 1.7-1.814 1.7-1.016 0-1.888-.698-1.858-1.724.03-1.025.926-1.659 1.803-1.659zM9.79 1l-1.172 9.473H6.225L5 1h4.79z">
-                                        </path>
-                                    </svg></span><span id="mealAlert">Add your meals</span></div>
+                                    </li>
+                                </template>
+                            </ul>
                         </div>
-                        <div class="row cart-scroll">
-                            <div class="col " id="col-second">
+                    </div>
+                </div>
+                <div class="d-inline-block float-left cart-wrapper">
+                    <div class=" px-0 row">
+                        <div class="mb-0 d-flex flex-column justify-content-center py-3 col-7 col-md-12">
+                            <p>My delivery for:</p>
+                            <p id="delivery-date"></p>
+                        </div>
+                        <div class="py-3 py-md-0 mb-md-2 col-5 col-md-12">
+                            <button type="button" class="btn btn-primary next-btn btn-lg btn-block" id="submitCart"
+                                disabled>Next</button>
+                        </div>
+                        <div
+                            class="InstructionalText-module__container___1qMMn text-center align-self-center w-100 text-nowrap">
+                            <span class="d-inline-block"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="20"
+                                    viewBox="0 0 16 20">
+                                    <path fill="#CD2C1E"
+                                        d="M7.455 11.473c.877 0 1.869.545 1.869 1.683 0 1.137-.797 1.7-1.814 1.7-1.016 0-1.888-.698-1.858-1.724.03-1.025.926-1.659 1.803-1.659zM9.79 1l-1.172 9.473H6.225L5 1h4.79z">
+                                    </path>
+                                </svg></span><span id="mealAlert">Add your meals</span></div>
+                    </div>
+                    <div class="row">
+                        <div class="col" id="cart-second-col">
 
-                            </div>
                         </div>
                     </div>
+                    <div class=" cart-footer w-100">
+                        <div class="d-inline-block float-left cart-footer-counter">
+                        </div>
+                        <button type="button" class=" d-inline-block flex-shrink-0 py-0 px-2 px-md-0 text-uppercase text-decoration-none float-right btn btn-link">Clear All</button>
+                    </div>
+
                 </div>
             </div>
         </section>
@@ -294,47 +282,43 @@
                         <div class="row">
                             <div class="col-12 order-1 col-md-7 order-md-0">
                                 <div class="new_checkout_wrapper new-express-design">
-                                    <h4 class="mb-0 text-uppercase d-none d-md-block pt-2 mb-4">Checkout</h4>
+                                    <h4 class="mb-0 text-uppercase d-none d-md-block pt-2 mb-4 check-out">Checkout</h4>
                                     <div class="collapsable-form d-block rounded-0 border-1 card">
                                         <div class="px-2 px-md-0 collapse show">
-                                            <form>
-                                                <div class="border-sm-0 rounded-0 border-bottom-0 card">
+                                            <form class="">
+                                                <div class="border-sm-0 rounded-0 border-bottom-0  card">
                                                     <div class="bg-transparent border-0 pt-0 px-0 px-md-2 card-header">
                                                         <div class="row">
                                                             <div class="col-md-10 offset-md-1">
-                                                                <h5 class="mb-0">Delivery Address</h5>
+                                                                <h5 class="mb-0 delivery-address">Delivery Address</h5>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="px-0 px-md-2 pb-0 card-body">
-                                                        <div class="row">
+                                                        <div class="row ">
                                                             <div class="p-0 col-md-10 offset-md-1">
-                                                                <div class="w-10 d-block d-md-flex w-100 form-group">
-                                                                    <div class="px-0 pb-3 pb-md-0 col">
-                                                                        <div class="col">
-                                                                            <label for="first_name"
-                                                                                class="small text-black-50 string optional">First
-                                                                                Name</label>
-                                                                            <div class="input-group">
-                                                                                <input type="text" name="firstName"
-                                                                                    value id="first_name"
-                                                                                    class=" form-control"
-                                                                                    aria-invalid="false">
-                                                                                <div class="invalid-feedback">
-                                                                                </div>
-                                                                            </div>
+                                                                <div class="row m-2">
+                                                                    <div class="p-2 col-md-6">
+                                                                        <label for="first_name"
+                                                                            class="small text-black-50 string optional">First
+                                                                            Name</label>
+                                                                        <div class="input-group"><input type="text"
+                                                                                name="firstName" value=""
+                                                                                id="first_name"
+                                                                                class="string optional form-control"
+                                                                                aria-invalid="false">
+                                                                            <div class="invalid-feedback"></div>
                                                                         </div>
-                                                                        <div class="col">
-                                                                            <label for="last_name"
-                                                                                class="small text-black-50 string optional">Last
-                                                                                Name</label>
-                                                                            <div class="input-group"><input type="text"
-                                                                                    name="lastName" value=""
-                                                                                    id="last_name" class=" form-control"
-                                                                                    aria-invalid="false">
-                                                                                <div class="invalid-feedback">
-                                                                                </div>
-                                                                            </div>
+                                                                    </div>
+                                                                    <div class="p-2 col-md-6">
+                                                                        <label for="last_name"
+                                                                            class="optional small string text-black-50">Last
+                                                                            Name</label>
+                                                                        <div class="input-group"><input type="text"
+                                                                                name="lastName" value="" id="last_name"
+                                                                                class="string optional form-control"
+                                                                                aria-invalid="false">
+                                                                            <div class="invalid-feedback"></div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -515,22 +499,20 @@
                                 <h4 class="mb-0 text-uppercase pt-3 mb-4 d-block d-md-none pt-4">
                                     <small>order and meals summary</small>
                                 </h4>
-                                <h4 class="mb-0 text-uppercase pt-2 mb-4 d-none d-md-block">order summary</h4>
+                                <h4 class="mb-0 text-uppercase pt-2 mb-4 d-none d-md-block meal-order-summary">order summary</h4>
                                 <div id="order-summary" class="order-summary-card rounded-0 mb-3 mb-md-5 card">
                                     <div class="py-2 px-3 card-body">
                                         <ul class="list-group-flush list-group">
                                             <li class="px-2 py-1 list-group-item">
-                                                <button type="button" class="pl-0 font-weight-normal btn btn-link">
-                                                    <u>+ Add Promo COde</u>
-                                                </button>
+                                                <u class="add-promo-code">+ Add Promo Code</u>
                                             </li>
                                             <li class="p-2 border-top-0 list-group-item">
                                                 <div class="row">
                                                     <div class="col">
-                                                        <label class="float-left text-secondary">Delivery Date</label>
+                                                        <label class="float-left text-secondary cart-custom-font">Delivery Date</label>
                                                         <div class="input-group">
                                                             <select name="dateSelect" id="dateSelect"
-                                                                class=" form-control delivery-day"
+                                                                class=" form-control delivery-day delivery-select"
                                                                 aria-invalid="false"></select>
                                                         </div>
                                                         <div class="invalid-feedback"></div>
@@ -542,16 +524,16 @@
                                                 </div>
                                             </li>
                                             <li class="px-2 pt-1 pb-2 border-top-0 list-group-item">
-                                                <div class="float-left text-secondary">Shipping</div>
-                                                <div class="float-right text-uppercase">$5.99</div>
+                                                <div class="float-left text-secondary cart-custom-font">Shipping</div>
+                                                <div class="float-right text-uppercase cart-custom-font">$5.99</div>
                                             </li>
                                             <li class="p-2 list-group-item" id="todayTotal">
-                                                <div class="float-left font-weight-500">Today's Total</div>
+                                                <div class="float-left font-weight-500 total-price">Today's Total</div>
                                             </li>
                                         </ul>
                                     </div>
                                 </div>
-                                <h4 class="mb-0 text-uppercase pt-2 mb-4 d-none d-md-block">My Meals</h4>
+                                <h4 class="mb-0 text-uppercase pt-2 mb-4 d-none d-md-block my-meals">My Meals</h4>
                                 <div class="rounded-0 card">
                                     <div class="p-0 flex-grow-0 flex-shrink-0 card-body check-out-meals">
                                     </div>
@@ -564,7 +546,7 @@
         </section>
     </div>
     <script>
-        $("#basic-steps").steps({
+        $("#freshly-steps").steps({
             headerTag: "h3",
             bodyTag: "section",
             transitionEffect: "slideLeft",
